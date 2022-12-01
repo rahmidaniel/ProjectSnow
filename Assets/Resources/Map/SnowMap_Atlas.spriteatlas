@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SnowMap_Atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: -3623569828042732667, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+    - {fileID: -4353201097585998727, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+    - {fileID: -1262648229753652894, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+    - {fileID: -318656045355207672, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+    - {fileID: 9076060966676661504, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+    - {fileID: 4466163038199046001, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+    - {fileID: -7320456436490287413, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+    - {fileID: 2009804171927621514, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+    - {fileID: 4359411457660723092, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 4359411457660723092, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+  - {fileID: -1262648229753652894, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+  - {fileID: -4353201097585998727, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+  - {fileID: -3623569828042732667, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+  - {fileID: 4466163038199046001, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+  - {fileID: 9076060966676661504, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+  - {fileID: -7320456436490287413, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+  - {fileID: -318656045355207672, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+  - {fileID: 2009804171927621514, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - mk_16_16_nature_tileset_496_256_16_16
+  - mk_16_16_nature_tileset_416_336_16_16
+  - mk_16_16_nature_tileset_400_384_16_16
+  - mk_16_16_nature_tileset_400_336_16_16
+  - mk_16_16_nature_tileset_432_368_16_16
+  - mk_16_16_nature_tileset_416_384_16_16
+  - mk_16_16_nature_tileset_448_384_16_16
+  - mk_16_16_nature_tileset_416_368_16_16
+  - mk_16_16_nature_tileset_480_336_16_16
+  m_RenderDataMap: {}
+  m_Tag: SnowMap_Atlas
+  m_IsVariant: 0

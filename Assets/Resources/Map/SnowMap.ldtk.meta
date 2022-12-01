@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: dafdde8b2e230491696bef3fa2dc4228
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: aaa16bfc62c086f4fb45da87b6acf9b1, type: 3}
+  _reimportOnDependencyChange: 1
+  _jsonFile: {fileID: -164016180542632921, guid: dafdde8b2e230491696bef3fa2dc4228, type: 3}
+  _pixelsPerUnit: 16
+  _atlas: {fileID: 4343727234628468602, guid: 22bc342e680b449dfa6f357957ade7af, type: 2}
+  _customLevelPrefab: {instanceID: 0}
+  _deparentInRuntime: 0
+  _intGridValueColorsVisible: 0
+  _useCompositeCollider: 1
+  _createBackgroundColor: 1
+  _createLevelBoundsTrigger: 1
+  _intGridValues:
+  - _key: Ground_1
+    _asset: {instanceID: 0}
+  _entities:
+  - _key: CampFire
+    _asset: {fileID: 6309599118117444192, guid: e8bae36b607017047ace9061609051d9, type: 3}
+  - _key: Player
+    _asset: {fileID: 2103921531639135667, guid: 61718509eb8ac459e9cd21c8ee40e365, type: 3}
+  - _key: Transition
+    _asset: {fileID: 5216658452876947603, guid: 3eb6559464c944d0f9dc7b0916c215f3, type: 3}
+  - _key: House
+    _asset: {fileID: 7132542113477795026, guid: 584a7dac6b44449a7945fca0b8d42ee5, type: 3}
+  _enumGenerate: 0
+  _enumPath: 
+  _enumNamespace: 

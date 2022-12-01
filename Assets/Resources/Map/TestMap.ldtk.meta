@@ -1,0 +1,35 @@
+fileFormatVersion: 2
+guid: 400cffdd91168453a80e32695b8287d9
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: aaa16bfc62c086f4fb45da87b6acf9b1, type: 3}
+  _reimportOnDependencyChange: 1
+  _jsonFile: {fileID: -164016180542632921, guid: 400cffdd91168453a80e32695b8287d9, type: 3}
+  _pixelsPerUnit: 16
+  _atlas: {fileID: 4343727234628468602, guid: 9fb37c584bdfb498890c3067c0ef3a8c, type: 2}
+  _customLevelPrefab: {instanceID: 0}
+  _deparentInRuntime: 0
+  _intGridValueColorsVisible: 0
+  _useCompositeCollider: 1
+  _createBackgroundColor: 0
+  _createLevelBoundsTrigger: 1
+  _intGridValues:
+  - _key: Gound_1
+    _asset: {instanceID: 0}
+  _entities:
+  - _key: Player
+    _asset: {fileID: 2103921531639135667, guid: 61718509eb8ac459e9cd21c8ee40e365, type: 3}
+  - _key: Campfire
+    _asset: {fileID: 6309599118117444192, guid: e8bae36b607017047ace9061609051d9, type: 3}
+  - _key: LevelGate
+    _asset: {fileID: 3008790804299420976, guid: 05d871b9365825b4ca356e1345739ee2, type: 3}
+  - _key: Furnace
+    _asset: {fileID: 6722427381568103880, guid: c81bce7e345024a9aa5473bc2b5950bb, type: 3}
+  _enumGenerate: 0
+  _enumPath: 
+  _enumNamespace: 
