@@ -32,7 +32,7 @@ namespace Scenes.Sctips.Checks
 
         private void EvaluateCollision(Collision2D collision)
         {
-            for (int i = 0; i < collision.contactCount; i++)
+            for (var i = 0; i < collision.contactCount; i++)
             {
                 _normal = collision.GetContact(i).normal;
                 OnGround |= _normal.y >= 0.9f;
@@ -41,13 +41,20 @@ namespace Scenes.Sctips.Checks
 
         private void RetrieveFriction(Collision2D collision)
         {
-            _material = collision.rigidbody.sharedMaterial;
-
-            Friction = 0;
-
-            if(_material != null)
+            try
             {
-                Friction = _material.friction;
+                _material = collision.rigidbody.sharedMaterial;
+
+                Friction = 0;
+
+                if(_material != null)
+                {
+                    Friction = _material.friction;
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
             }
         }
     }

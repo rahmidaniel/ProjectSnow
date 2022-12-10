@@ -1,6 +1,5 @@
 using System;
 using _Scripts.Utility;
-using Scenes.Sctips.Controllers;
 using TMPro;
 using UnityEngine;
 
@@ -16,8 +15,5 @@ namespace _Scripts.Units.Utility
         }
 
         protected override void Interact() {}
-
-        protected override void OnPlayerEnter() { }
-        protected override void OnPlayerExit() { }
     }
 }

@@ -29,68 +29,6 @@
 	"fieldInstances": [],
 	"layerInstances": [
 		{
-			"__identifier": "Entities",
-			"__type": "Entities",
-			"__cWid": 22,
-			"__cHei": 16,
-			"__gridSize": 16,
-			"__opacity": 1,
-			"__pxTotalOffsetX": 0,
-			"__pxTotalOffsetY": 0,
-			"__tilesetDefUid": null,
-			"__tilesetRelPath": null,
-			"iid": "da1dcfc0-5110-11ed-9193-331a8447a7a9",
-			"levelId": 11,
-			"layerDefUid": 10,
-			"pxOffsetX": 0,
-			"pxOffsetY": 0,
-			"visible": true,
-			"optionalRules": [],
-			"intGridCsv": [],
-			"autoLayerTiles": [],
-			"seed": 5194069,
-			"overrideTilesetUid": null,
-			"gridTiles": [],
-			"entityInstances": [
-				{
-					"__identifier": "LevelGate",
-					"__grid": [21,9],
-					"__pivot": [0.5,0.5],
-					"__tags": [],
-					"__tile": null,
-					"__smartColor": "#13D6BB",
-					"iid": "eb289ac0-5110-11ed-9193-5f85d869de5d",
-					"width": 16,
-					"height": 64,
-					"defUid": 8,
-					"px": [344,152],
-					"fieldInstances": [{ "__identifier": "LevelRef", "__value": {
-						"entityIid": "d023a490-5110-11ed-9193-63114b578e07",
-						"layerIid": "a722f820-5110-11ed-9193-c7708d9178cc",
-						"levelIid": "a6cdefc0-5110-11ed-9193-253f61f0bf69",
-						"worldIid": "440a0470-5110-11ed-8c37-318113665427"
-					}, "__type": "EntityRef", "__tile": null, "defUid": 9, "realEditorValues": [{
-						"id": "V_String",
-						"params": ["d023a490-5110-11ed-9193-63114b578e07"]
-					}] }]
-				},
-				{
-					"__identifier": "Furnace",
-					"__grid": [5,11],
-					"__pivot": [0.5,0.5],
-					"__tags": [],
-					"__tile": null,
-					"__smartColor": "#A3111F",
-					"iid": "2b22c740-5110-11ed-9193-4dec6e7a8c76",
-					"width": 16,
-					"height": 16,
-					"defUid": 12,
-					"px": [88,184],
-					"fieldInstances": []
-				}
-			]
-		},
-		{
 			"__identifier": "Gound",
 			"__type": "IntGrid",
 			"__cWid": 22,

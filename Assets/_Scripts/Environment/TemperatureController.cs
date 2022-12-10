@@ -1,8 +1,5 @@
 using System;
-using _Scripts.Units.Utility;
 using _Scripts.Utility;
-using Scenes.Sctips.Controllers;
-using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -21,6 +18,7 @@ namespace _Scripts.Environment
         
         public static UnityAction<float, float, float> OnTemperatureChange;
 
+
         private float _currentVelocity;
         [SerializeField] private float delta;
 
@@ -31,10 +29,10 @@ namespace _Scripts.Environment
 
         private void Update()
         {
-            cappedMax = max - (1 - GameManager.Instance.HouseInfo.Integrity) * (max - min);
+            cappedMax = max - (1 - Player.Instance.HouseInfo.Integrity) * (max - min);
             var diff =  Time.deltaTime * ((max - min) / ttl);
 
-            switch (GameManager.Instance.HouseInfo.State)
+            switch (Player.Instance.HouseInfo.State)
             {
                 case HouseState.Inside:
                     current += diff * gainRate;

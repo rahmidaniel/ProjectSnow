@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8706724145861310461}
   - component: {fileID: 1650093572816039032}
   - component: {fileID: 2657824689716983701}
-  - component: {fileID: 643791243653286779}
+  - component: {fileID: 8780028984029870629}
   m_Layer: 0
   m_Name: LogSmall
   m_TagString: Log
@@ -124,7 +124,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.984375, y: 0.984375}
   m_Direction: 0
---- !u!114 &643791243653286779
+--- !u!114 &8780028984029870629
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,11 +133,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 4204355056560993824}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f33af1f371c410c8b2f4b1da4a570d8, type: 3}
+  m_Script: {fileID: 11500000, guid: 628efa98b9214d8c825b95cd608101ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drop: {fileID: 0}
-  dropCount: 2
-  pickUpAllowed: 1
-  grabAllowed: 0
-  hitAllowed: 0

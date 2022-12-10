@@ -21,8 +21,14 @@ namespace _Scripts.Units.Utility
 
         private void Start()
         {
+            bar.interactable = false;
             _text = GetComponentInChildren<TextMeshProUGUI>();
             TemperatureController.OnTemperatureChange += OnTemperatureChange;
+        }
+        
+        private void OnDestroy()
+        {
+            TemperatureController.OnTemperatureChange -= OnTemperatureChange;
         }
 
         private void OnTemperatureChange(float min, float current, float max)

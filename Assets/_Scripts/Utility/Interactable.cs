@@ -1,61 +1,61 @@
+using System;
 using _Scripts.Environment;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 namespace _Scripts.Utility
 {
     public abstract class Interactable : MonoBehaviour
     {
-        [SerializeField] protected GameObject actionPanel;
-        private InputController _controller;
-        private TextMeshProUGUI _text;
+        public static UnityAction<string> ShowMessage;
+        public static UnityAction HideMessage;
+
+        private InputAction _interactAction;
+        // Pretty print for UI elements
+        protected string CurrentBinding => _interactAction.GetBindingDisplayString(group: Player.Instance.GetCurrentControlScheme());
         private bool _enter;
         
         protected abstract string UpdateMessage();
         protected abstract void Interact();
-        
-        /// <summary>
-        /// Define as empty function if there is no need for an entry event
-        /// </summary>
-        protected abstract void OnPlayerEnter();
-        /// <summary>
-        /// Define as empty function if there is no need for an entry event
-        /// </summary>
-        protected abstract void OnPlayerExit();
 
-        public void Start() 
+        private void OnEnable()
         {
-            _controller = GameManager.Instance.Controller;
-            _text = actionPanel.GetComponentInChildren<TextMeshProUGUI>();
+            var c = new PlayerControl();
+            _interactAction = c.Player.Fire;
+            _interactAction.Enable();
+            _interactAction.performed += OnFire;
         }
 
-        public void Update()
+        public void OnFire(InputAction.CallbackContext context)
         {
-            if (_enter)
-            {
-                if(_controller.RetrieveInteractInput()) Interact();
-            }
+            if(_enter) Interact();
         }
-        
-        private void OnTriggerEnter2D(Collider2D other)
+
+        private void OnDisable()
+        {
+            _interactAction.performed -= OnFire;
+        }
+
+        protected void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
             {
                 _enter = true;
-                actionPanel.SetActive(true);
-                _text.text = UpdateMessage();
-                OnPlayerEnter();
+                // Send message to UI
+                ShowMessage?.Invoke(UpdateMessage());
             }
         }
         
-        private void OnTriggerExit2D(Collider2D other)
+        protected void OnTriggerExit2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
             {
                 _enter = false;
-                actionPanel.SetActive(false);
-                _text.text = "";
-                OnPlayerExit();
+                // Send message to UI to hide the panel
+                HideMessage?.Invoke();
             }
         }
 

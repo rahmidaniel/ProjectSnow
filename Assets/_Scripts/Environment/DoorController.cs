@@ -1,8 +1,8 @@
 using _Scripts.Utility;
-using Scenes.Sctips.Controllers;
+using _Scripts.Utility.Serialization;
 using UnityEngine;
 
-public class DoorController : Interactable
+public class DoorController : Interactable, IPersistentData
 {
     public bool IsOpen { get; private set; }
 
@@ -15,10 +15,8 @@ public class DoorController : Interactable
         return "Press 'F' to " + (IsOpen ? "close" : "open") + " the door";
     }
 
-    private new void Start()
+    private void Start()
     {
-        base.Start();
-
         _body = GetComponent<SpriteRenderer>();
         _closedColor = _body.color;
         _openColor = new Color(_closedColor.r * 0.5f, _closedColor.g * 0.5f, _closedColor.b * 0.5f, _closedColor.a);
@@ -51,6 +49,13 @@ public class DoorController : Interactable
             _body.sortingOrder = 0;
         }
     }
-    protected override void OnPlayerEnter() { }
-    protected override void OnPlayerExit() { }
+    public void SaveData(ref GameData data)
+    {
+        data.doorOpen = IsOpen;
+    }
+
+    public void LoadData(GameData data)
+    {
+        IsOpen = data.doorOpen;
+    }
 }

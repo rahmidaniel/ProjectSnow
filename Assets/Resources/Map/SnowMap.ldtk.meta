@@ -16,7 +16,7 @@ ScriptedImporter:
   _deparentInRuntime: 0
   _intGridValueColorsVisible: 0
   _useCompositeCollider: 1
-  _createBackgroundColor: 1
+  _createBackgroundColor: 0
   _createLevelBoundsTrigger: 1
   _intGridValues:
   - _key: Ground_1
@@ -30,6 +30,8 @@ ScriptedImporter:
     _asset: {fileID: 5216658452876947603, guid: 3eb6559464c944d0f9dc7b0916c215f3, type: 3}
   - _key: House
     _asset: {fileID: 7132542113477795026, guid: 584a7dac6b44449a7945fca0b8d42ee5, type: 3}
+  - _key: Tree
+    _asset: {instanceID: 0}
   _enumGenerate: 0
   _enumPath: 
   _enumNamespace: 

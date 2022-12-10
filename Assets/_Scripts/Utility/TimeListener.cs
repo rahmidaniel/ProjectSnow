@@ -7,17 +7,20 @@ namespace _Scripts.Utility
 {
     public class TimeListener : MonoBehaviour
     {
-        private TextMeshProUGUI _text;
+        [SerializeField] private TextMeshProUGUI text;
 
         private void Start()
         {
-            _text = GetComponentInChildren<TextMeshProUGUI>();
             TimeController.OnDateTimeChanged += OnDateTimeChanged;
+        }
+        private void OnDestroy()
+        {
+            TimeController.OnDateTimeChanged -= OnDateTimeChanged;
         }
 
         private void OnDateTimeChanged(int day, int hour, int minute)
         {
-            _text.text = $"Day: {day}\n {hour:00}:{minute:00}";
+            text.text = $"Day: {day}\n {hour:00}:{minute:00}";
         }
     }
 }

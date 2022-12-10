@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{f9bca275-4afd-4d7c-b624-aea973132873}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnity", "FMODUnity.csproj", "{b8138774-b682-4579-6f0e-bfcfbdfc0eec}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityResonance", "FMODUnityResonance.csproj", "{398b1932-4165-ebb8-cc1f-4d384c9e9f7f}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityEditor", "FMODUnityEditor.csproj", "{4ae9c874-4ff4-7983-35d3-d60c89b6da98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityResonanceEditor", "FMODUnityResonanceEditor.csproj", "{8c34ff20-734c-de7a-5c07-29e27b7a7517}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{c7d888ff-f3c6-8f24-c3f1-9197f60dde4a}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,6 +20,16 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{f9bca275-4afd-4d7c-b624-aea973132873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{f9bca275-4afd-4d7c-b624-aea973132873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b8138774-b682-4579-6f0e-bfcfbdfc0eec}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b8138774-b682-4579-6f0e-bfcfbdfc0eec}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{398b1932-4165-ebb8-cc1f-4d384c9e9f7f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{398b1932-4165-ebb8-cc1f-4d384c9e9f7f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ae9c874-4ff4-7983-35d3-d60c89b6da98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ae9c874-4ff4-7983-35d3-d60c89b6da98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8c34ff20-734c-de7a-5c07-29e27b7a7517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8c34ff20-734c-de7a-5c07-29e27b7a7517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{c7d888ff-f3c6-8f24-c3f1-9197f60dde4a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{c7d888ff-f3c6-8f24-c3f1-9197f60dde4a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
