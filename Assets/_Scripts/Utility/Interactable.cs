@@ -49,6 +49,16 @@ namespace _Scripts.Utility
             }
         }
         
+        protected void OnTriggerStay2D(Collider2D other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                _enter = true;
+                // Send message to UI
+                ShowMessage?.Invoke(UpdateMessage());
+            }
+        }
+        
         protected void OnTriggerExit2D(Collider2D other)
         {
             if (other.CompareTag("Player"))

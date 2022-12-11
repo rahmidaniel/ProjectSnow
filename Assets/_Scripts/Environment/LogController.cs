@@ -1,4 +1,5 @@
 using _Scripts.Utility;
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,6 +14,7 @@ namespace _Scripts.Environment
 
         protected override void Interact()
         {
+            SoundManager.PlayOneShot(FMODEvents.Instance.LogPickup, transform.position);
             Player.Instance.logCount++;
             Destroy(gameObject);
         }

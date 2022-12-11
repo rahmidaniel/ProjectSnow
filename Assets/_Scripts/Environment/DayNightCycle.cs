@@ -1,4 +1,6 @@
 using System;
+using _Scripts.Utility;
+using _Scripts.Utility.Serialization;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
@@ -9,13 +11,28 @@ namespace _Scripts.Environment
 {
     public class DayNightCycle : MonoBehaviour
     {
+        private static DayNightCycle Instance;
         
         [SerializeField] private float nightIntensity = 1;
         [SerializeField] private AnimationCurve lightCurve;
         [SerializeField] private Gradient lightGradient;
+
         private ColorAdjustments _colorAdjustments;
         private Volume _volume;
-
+        
+        private void Awake()
+        {
+            if (Instance != null)
+            {
+                //Debug.Log("Existing 'Managers' instance found, newest destroyed.");
+                Destroy(gameObject);
+                return;
+            }
+            
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        
         private void Start()
         {
             _volume = GetComponent<Volume>();

@@ -12,9 +12,9 @@ namespace _Scripts.Utility
         // Cutscene should only play once
         private void OnEnable()
         {
-            if (SerializationManager.Instance.IsNewSave)
+            
+            if (SerializationManager.Instance == null || SerializationManager.Instance.IsNewSave)
             {
-                Debug.Log("Playing cutscene.");
                 gameObject.SetActive(true);
             }
             else gameObject.SetActive(false);

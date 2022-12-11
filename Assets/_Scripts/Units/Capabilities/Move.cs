@@ -1,12 +1,12 @@
-using System;
-using _Scripts.Units.Utility;
+using _Scripts.Utility;
+using FMOD.Studio;
 using Scenes.Sctips.Checks;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 namespace _Scripts.Units.Capabilities
 {
-    [RequireComponent(typeof(Ground), typeof(Rigidbody2D), typeof(Animator))]
+    [RequireComponent(typeof(Ground), typeof(Rigidbody2D), typeof(PlayerAnimator))]
     public class Move : MonoBehaviour
     {
         [SerializeField] private float maxSpeed = 15f;
@@ -22,26 +22,45 @@ namespace _Scripts.Units.Capabilities
         private Rigidbody2D _body;
 
         private bool _mFacingRight;
-        private Animator _animator;
-        private static readonly int Speed = Animator.StringToHash("speed");
 
         private void Awake()
         {
             _body = GetComponent<Rigidbody2D>();
-            _animator = GetComponent<Animator>();
             _ground = GetComponent<Ground>();
+        }
+
+        private void Start()
+        {
+           // _footstepsInstance = SoundManager.Instance.CreateEventInstance(FMODEvents.Instance.Running);
         }
 
         private void Update()
         {
-            if (blocked)
-            {
-                _body.velocity = Vector2.zero;
-                return;
-            }
             _desiredVelocity = new Vector2(_horizontal * Mathf.Max(maxSpeed - _ground.Friction, 0f) * speedModifier, 0f);
-            _animator.SetFloat(Speed, Mathf.Abs(_desiredVelocity.x));
-            switch (_desiredVelocity.x)
+        }
+
+        private void FixedUpdate()
+        {
+            var velocity = Vector2.zero;
+
+            if (!blocked)
+            {
+                velocity = _body.velocity;
+                var acceleration = _ground.OnGround ? maxAcceleration : maxAirAcceleration;
+                var maxSpeedChange = acceleration * Time.deltaTime;
+                velocity.x = Mathf.MoveTowards(velocity.x, _desiredVelocity.x, maxSpeedChange);    
+            }
+
+            _body.velocity = velocity;
+            UpdateAnimation();
+        }
+
+        private void UpdateAnimation()
+        {
+            if (_ground.OnGround && PlayerAnimator.Instance.IsAnimationFinished(PlayerAnimationState.Hit))
+                PlayerAnimator.Instance.ChangeAnimation(_body.velocity.x == 0f ? PlayerAnimationState.Idle : PlayerAnimationState.Run);
+            //UpdateSound(); // For cutscenes
+            switch (_body.velocity.x)
             {
                 case < 0 when !_mFacingRight:
                 case > 0 when _mFacingRight:
@@ -49,17 +68,6 @@ namespace _Scripts.Units.Capabilities
                     break;
             }
         }
-
-        private void FixedUpdate()
-        {
-            var velocity = _body.velocity;
-
-            var acceleration = _ground.OnGround ? maxAcceleration : maxAirAcceleration;
-            var maxSpeedChange = acceleration * Time.deltaTime;
-            velocity.x = Mathf.MoveTowards(velocity.x, _desiredVelocity.x, maxSpeedChange);
-
-            _body.velocity = velocity;
-        } 
 
         public void OnMove(InputValue value)
         {

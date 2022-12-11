@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2062595277064056725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2062595277064056727}
+  - component: {fileID: 2062595277064056724}
+  m_Layer: 0
+  m_Name: FMODEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2062595277064056727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062595277064056725}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2062595277064056724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062595277064056725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4172893289944a5837328dfd41f9163, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <LogPickup>k__BackingField:
+    Guid:
+      Data1: 1061799598
+      Data2: 1252458595
+      Data3: 291387062
+      Data4: -682237470
+    Path: event:/SFX/Wood/LogPickup
+  <Damage>k__BackingField:
+    Guid:
+      Data1: -500285688
+      Data2: 1191657300
+      Data3: 1620698044
+      Data4: -1433057707
+    Path: event:/SFX/Wood/Damage
+  <Running>k__BackingField:
+    Guid:
+      Data1: 784532241
+      Data2: 1265689602
+      Data3: 1774417840
+      Data4: -894065465
+    Path: event:/SFX/Player/Walk
+  <Jump>k__BackingField:
+    Guid:
+      Data1: -1343706090
+      Data2: 1264772861
+      Data3: -572147328
+      Data4: -2083872726
+    Path: event:/SFX/Player/Jump
+  <FrozenBreath>k__BackingField:
+    Guid:
+      Data1: 757508389
+      Data2: 1327244881
+      Data3: 2019059875
+      Data4: -597348778
+    Path: event:/SFX/Player/FrozenBreath
+  <Hit>k__BackingField:
+    Guid:
+      Data1: -1318248132
+      Data2: 1247250146
+      Data3: -43623749
+      Data4: -1705630409
+    Path: event:/SFX/Player/Hit
+  <Ambience>k__BackingField:
+    Guid:
+      Data1: 730687672
+      Data2: 1119068862
+      Data3: -328991560
+      Data4: -431251731
+    Path: event:/Ambiance/AmbianceAreas
+  <Menu>k__BackingField:
+    Guid:
+      Data1: -2139112213
+      Data2: 1335649220
+      Data3: -596859991
+      Data4: 591284494
+    Path: event:/Music/Menu
+  <Mountain>k__BackingField:
+    Guid:
+      Data1: 2141583866
+      Data2: 1154570131
+      Data3: 752189081
+      Data4: -1893600163
+    Path: event:/Music/Level0/Mountain
+  <Forest>k__BackingField:
+    Guid:
+      Data1: -1195785494
+      Data2: 1189821408
+      Data3: -805615187
+      Data4: -651525510
+    Path: event:/Music/Level1/Forest
+  <Night>k__BackingField:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  <HouseFireOn>k__BackingField:
+    Guid:
+      Data1: 2142081982
+      Data2: 1133176837
+      Data3: -1581298799
+      Data4: 950779813
+    Path: event:/Music/Level1/House_FireOn

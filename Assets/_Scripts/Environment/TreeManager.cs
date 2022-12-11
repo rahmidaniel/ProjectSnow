@@ -93,7 +93,7 @@ namespace _Scripts.Environment
             var maxTreeInArea = (int)Mathf.Round((int)(sizeX / _treeCollider.size.x) * density);
             // remaining space
             var maxCapacity = _trees.Capacity - _trees.Count;
-            Debug.Log((int)(sizeX / _treeCollider.size.x)+ ", max:" + maxTreeInArea);
+            //Debug.Log((int)(sizeX / _treeCollider.size.x)+ ", max:" + maxTreeInArea);
             // lesser should dominate
             return Math.Min(maxCapacity, maxTreeInArea);
         }

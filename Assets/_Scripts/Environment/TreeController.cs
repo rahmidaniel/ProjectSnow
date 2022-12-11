@@ -1,4 +1,6 @@
+using _Scripts.Units.Capabilities;
 using _Scripts.Utility;
+using FMOD.Studio;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -13,11 +15,14 @@ namespace _Scripts.Environment
         public Rigidbody2D Rigidbody2D { get; private set; }
         public Collider2D Collider2D { get; private set; }
 
+        private EventInstance _damageInstance;
+        
         private void Start()
         {
             Rigidbody2D = GetComponent<Rigidbody2D>();
             Collider2D = GetComponent<Collider2D>();
             _spread = Collider2D.transform.localScale;
+            _damageInstance = SoundManager.Instance.CreateEventInstance(FMODEvents.Instance.Damage);
         }
             
         protected override string UpdateMessage()
@@ -27,6 +32,9 @@ namespace _Scripts.Environment
 
         protected override void Interact()
         {
+            PlayerAnimator.Instance.ChangeAnimation(PlayerAnimationState.Hit);
+            _damageInstance.start();
+
             // get root point (y) of the tree
             var basePoint = transform.position.y - _spread.y / 2f; 
             

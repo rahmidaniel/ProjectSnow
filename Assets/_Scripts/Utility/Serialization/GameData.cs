@@ -14,6 +14,8 @@ namespace _Scripts.Utility.Serialization
         public Vector3 playerPosition;
         public int sceneIndex;
         public List<Vector3> treePositions;
+        public Vector3 time;
+        public Vector3 temperature;
 
         public GameData()
         {
@@ -24,6 +26,8 @@ namespace _Scripts.Utility.Serialization
             doorOpen = false;
             fuel = maxFuel;
             treePositions = new List<Vector3>();
+            time = Vector3.zero;
+            temperature = Vector3.zero;
         }
     }
 }

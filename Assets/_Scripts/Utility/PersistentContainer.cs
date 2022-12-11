@@ -10,7 +10,7 @@ namespace _Scripts.Units.Utility
         {
             if (Instance != null)
             {
-                Debug.Log("Existing 'Managers' instance found, newest destroyed.");
+                //Debug.Log("Existing 'Managers' instance found, newest destroyed.");
                 Destroy(gameObject);
                 return;
             }

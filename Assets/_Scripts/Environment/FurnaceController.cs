@@ -1,9 +1,12 @@
 using _Scripts.Utility;
 using _Scripts.Utility.Serialization;
+using FMODUnity;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 namespace _Scripts.Environment
 {
+    [RequireComponent(typeof(StudioEventEmitter))]
     public class FurnaceController : Interactable, IPersistentData
     {
         [SerializeField] private float fuel = 80f;
@@ -17,6 +20,20 @@ namespace _Scripts.Environment
         private Collider2D _collider2D;
         private SpriteRenderer _body;
 
+        private StudioEventEmitter _emitter;
+
+        private FireAmbiance FireAmbience
+        {
+            get => _fireAmbience;
+            set
+            {
+                // This isn't high cost because of the checks in UpdateSound
+                _emitter.SetParameter("fire", (float) value);
+                _fireAmbience = value;
+            }
+        }
+        private FireAmbiance _fireAmbience;
+
         protected override string UpdateMessage()
         {
             return "Press 'F' to feed the flames. (" + (int) fuel + "/" + (int) maxFuel + ")";
@@ -25,9 +42,10 @@ namespace _Scripts.Environment
         private void Start()
         {
             _body = GetComponent<SpriteRenderer>();
+            _emitter = GetComponent<StudioEventEmitter>();
         }
 
-        private void LateUpdate()
+        private void Update()
         {
             if (fuel > 0)
             {
@@ -43,8 +61,27 @@ namespace _Scripts.Environment
                         break;
                 }
             }
-
+        
             Player.Instance.HouseInfo.Integrity = fuel / maxFuel;
+            UpdateSound();
+        }
+
+        private void UpdateSound()
+        {
+            // 33%
+            var value = Player.Instance.HouseInfo.Integrity;
+            if (FireAmbiance.High != FireAmbience && value > 0.7f)
+            {
+                FireAmbience = FireAmbiance.High;
+            }
+            if (FireAmbiance.Medium != FireAmbience && value is < 0.7f and >= 0.3f)
+            {
+               FireAmbience = FireAmbiance.Medium;
+            }
+            if (FireAmbiance.Low != FireAmbience && value < 0.3f)
+            {
+                FireAmbience = FireAmbiance.Low;
+            }
         }
 
         protected override void Interact()

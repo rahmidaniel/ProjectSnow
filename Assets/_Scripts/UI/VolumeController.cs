@@ -1,3 +1,4 @@
+using _Scripts.Utility;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -7,13 +8,13 @@ namespace _Scripts.UI.Menus
 {
     public class VolumeController : MonoBehaviour
     {
-        [SerializeField] private AudioMixer audioMixer;
         [SerializeField] private TextMeshProUGUI valueText;
         [SerializeField] private Slider slider;
 
         private void Start()
         {
             slider.onValueChanged.AddListener(OnValueChanged);
+            if(SoundManager.Instance != null) slider.normalizedValue = SoundManager.Instance.masterVolume;
         }
 
         private void OnDestroy()
@@ -24,7 +25,7 @@ namespace _Scripts.UI.Menus
         private void OnValueChanged(float volume)
         {
             valueText.text = (slider.normalizedValue * 100f).ToString("0") + "%";
-            audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20); // non linear
+            SoundManager.Instance.masterVolume = slider.normalizedValue;
         }
 
     }

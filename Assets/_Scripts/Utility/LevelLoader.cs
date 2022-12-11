@@ -66,6 +66,7 @@ public class LevelLoader : MonoBehaviour
             Player.Instance.TeleportToLevel();
             _enter = true;
         }
+        
         Player.Instance.DisableMovement(false);
     }
 }

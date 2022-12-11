@@ -1,6 +1,10 @@
+using System;
+using System.Security.Cryptography.X509Certificates;
 using _Scripts.Environment;
+using _Scripts.Units.Capabilities;
 using _Scripts.Units.Utility;
 using _Scripts.Utility;
+using FMOD.Studio;
 using Scenes.Sctips.Checks;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,7 +12,7 @@ using Vector2 = UnityEngine.Vector2;
 
 namespace Scenes.Sctips.Capabilities
 {
-    [RequireComponent(typeof(Ground), typeof(Rigidbody2D))]
+    [RequireComponent(typeof(Ground), typeof(Rigidbody2D), typeof(PlayerAnimator))]
     public class Jump : MonoBehaviour
     {
         [SerializeField, Range(0f, 10f)] private float jumpHeight = 3f;
@@ -20,12 +24,14 @@ namespace Scenes.Sctips.Capabilities
         private Vector2 _velocity;
 
         private bool _desiredJump;
+        private bool _jumpStarted;
 
         private void Awake()
         {
             _body = GetComponent<Rigidbody2D>();
             _ground = GetComponent<Ground>();
         }
+
         public void OnJump(InputValue value)
         {
             if (_ground.OnGround && Player.Instance.CanMove())
@@ -44,18 +50,31 @@ namespace Scenes.Sctips.Capabilities
                 _desiredJump = false;
                 CalculateJump();
             }
-               
-            _body.gravityScale = _body.velocity.y switch
-            {
-                > 0 => upwardMovementMultiplier,
-                < 0 => downwardMovementMultiplier,
-                0 => 1f,
-                _ => _body.gravityScale
-            };
 
+            switch (_body.velocity.y)
+            {
+                case > 0.01f:
+                    _body.gravityScale = upwardMovementMultiplier;
+                    if(!_ground.OnGround) PlayerAnimator.Instance.ChangeAnimation(PlayerAnimationState.Jump);
+                    break;
+                case < -0.01f:
+                    _body.gravityScale = downwardMovementMultiplier;
+                    if(!_ground.OnGround) PlayerAnimator.Instance.ChangeAnimation(PlayerAnimationState.Fall);
+                    break;
+                case > -0.1f and < 0f:
+                    if(!_ground.OnGround) PlayerAnimator.Instance.JumpSound(1);
+                    break;
+                case 0f:
+                    _body.gravityScale = 1f;
+                    break;
+                default:
+                    _body.gravityScale = _body.gravityScale;
+                    break;
+            }
+            
             _body.velocity = _velocity;
         }
-        
+
         private void CalculateJump()
         {
             if (!_ground.OnGround) return;

@@ -1,11 +1,12 @@
 using System;
 using _Scripts.Utility;
+using _Scripts.Utility.Serialization;
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace _Scripts.Environment
 {
-    public class TemperatureController : MonoBehaviour
+    public class TemperatureController : MonoBehaviour, IPersistentData
     {
         [SerializeField] private float min = -10;
         [SerializeField] private float current = 30;
@@ -51,6 +52,19 @@ namespace _Scripts.Environment
             }
             
             OnTemperatureChange?.Invoke(min, current, max);
+        }
+
+        public void SaveData(ref GameData data)
+        {
+            data.temperature = new Vector3(min, current, max);
+        }
+
+        public void LoadData(GameData data)
+        {
+            if (data.temperature == Vector3.zero) return;
+            min = (int) data.temperature[0];
+            current = (int) data.temperature[1];
+            max = (int) data.temperature[2];
         }
     }
 }
