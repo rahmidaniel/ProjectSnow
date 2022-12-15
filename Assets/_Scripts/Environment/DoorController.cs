@@ -1,5 +1,6 @@
 using _Scripts.Utility;
 using _Scripts.Utility.Serialization;
+using FMOD.Studio;
 using UnityEngine;
 
 public class DoorController : Interactable, IPersistentData
@@ -9,6 +10,7 @@ public class DoorController : Interactable, IPersistentData
     private Collider2D _collider2D;
     private SpriteRenderer _body;
     private Color _closedColor, _openColor;
+    private EventInstance _doorSound;
 
     protected override string UpdateMessage()
     {
@@ -22,6 +24,8 @@ public class DoorController : Interactable, IPersistentData
         _openColor = new Color(_closedColor.r * 0.5f, _closedColor.g * 0.5f, _closedColor.b * 0.5f, _closedColor.a);
 
         tag = "Door";
+        
+        _doorSound = SoundManager.Instance.CreateEventInstance(FMODEvents.Instance.Door);
         
         var collider2Ds = GetComponents<Collider2D>();
         // TODO: loop is unnecessary here, but gets the actual collider
@@ -37,6 +41,13 @@ public class DoorController : Interactable, IPersistentData
     protected override void Interact()
     {
         IsOpen = !IsOpen;
+        
+        _doorSound.setParameterByName("door", IsOpen ? 0 : 1);
+        _doorSound.getPlaybackState(out var playbackState);
+        if(playbackState == PLAYBACK_STATE.PLAYING)
+            _doorSound.stop(STOP_MODE.ALLOWFADEOUT);
+        _doorSound.start();
+        
         _collider2D.enabled = !_collider2D.enabled;
         if (IsOpen)
         {

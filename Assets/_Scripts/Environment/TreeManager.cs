@@ -26,7 +26,14 @@ namespace _Scripts.Environment
             _treeCollider = treePrefab.GetComponent<BoxCollider2D>();
 
             if(SerializationManager.Instance == null || SerializationManager.Instance.IsNewSave) SpawnInArea();
+            TimeController.OnDateTimeChanged += OnDateTimeChanged;
         }
+
+        private void OnDateTimeChanged(int day, int hour, int min)
+        {
+            if(hour == 0 && min == 0) SpawnInArea();
+        }
+
         private void SpawnInArea()
         {
             var sizeX = _area.size.x;
@@ -93,7 +100,7 @@ namespace _Scripts.Environment
             var maxTreeInArea = (int)Mathf.Round((int)(sizeX / _treeCollider.size.x) * density);
             // remaining space
             var maxCapacity = _trees.Capacity - _trees.Count;
-            //Debug.Log((int)(sizeX / _treeCollider.size.x)+ ", max:" + maxTreeInArea);
+
             // lesser should dominate
             return Math.Min(maxCapacity, maxTreeInArea);
         }
@@ -120,6 +127,7 @@ namespace _Scripts.Environment
 
         public void LoadData(GameData data)
         {
+            if (data.treePositions.Count == 0) return;
             _trees ??= new List<GameObject>(); // making sure the list exists
             foreach (var treePosition in data.treePositions)
             {

@@ -9,7 +9,7 @@ namespace _Scripts.Utility
     [RequireComponent(typeof(CinemachineVirtualCamera))]
     public class CameraLockOnTarget : MonoBehaviour
     {
-        private void OnEnable()
+        private void Start()
         {
             var vcam = GetComponent<CinemachineVirtualCamera>();
             vcam.Follow = Player.Instance.transform;

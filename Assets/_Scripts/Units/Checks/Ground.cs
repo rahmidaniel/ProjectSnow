@@ -1,9 +1,11 @@
 using System;
+using System.Security.Cryptography.X509Certificates;
 using Unity;
 using UnityEngine;
 
 namespace Scenes.Sctips.Checks
 {
+    [RequireComponent(typeof(BoxCollider2D))]
     public class Ground : MonoBehaviour
     {
         public bool OnGround { get; private set; }
@@ -17,19 +19,19 @@ namespace Scenes.Sctips.Checks
             OnGround = false;
             Friction = 0;
         }
-
+        
         private void OnCollisionEnter2D(Collision2D collision)
         {
             EvaluateCollision(collision);
             RetrieveFriction(collision);
         }
-
+        
         private void OnCollisionStay2D(Collision2D collision)
         {
             EvaluateCollision(collision);
             RetrieveFriction(collision);
         }
-
+        
         private void EvaluateCollision(Collision2D collision)
         {
             for (var i = 0; i < collision.contactCount; i++)
@@ -38,23 +40,23 @@ namespace Scenes.Sctips.Checks
                 OnGround |= _normal.y >= 0.9f;
             }
         }
-
+        
         private void RetrieveFriction(Collision2D collision)
         {
             try
             {
                 _material = collision.rigidbody.sharedMaterial;
-
+        
                 Friction = 0;
-
+        
                 if(_material != null)
                 {
                     Friction = _material.friction;
                 }
             }
-            catch (Exception e)
+            catch
             {
-                Console.WriteLine(e);
+                // ignored
             }
         }
     }

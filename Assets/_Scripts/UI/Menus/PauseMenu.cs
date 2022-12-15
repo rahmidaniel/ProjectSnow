@@ -14,6 +14,7 @@ namespace _Scripts.Units.Utility
     {
         public static bool IsPaused;
         [SerializeField] private GameObject pauseMenu;
+        [SerializeField] private Button continueButton;
         private PlayerControl _inputActions;
         private InputAction _menu;
 
@@ -51,6 +52,7 @@ namespace _Scripts.Units.Utility
 
         public void Pause()
         {
+            continueButton.Select();
             UIManager.UIStateChanged.Invoke(UIState.PauseMenu);
             Player.Instance.DisableMovement(true);
             Time.timeScale = 0f;

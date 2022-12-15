@@ -20,12 +20,14 @@ namespace _Scripts.Environment
         [Header("Ambient Sound")] 
         [SerializeField] private int dusk = 20;
         [SerializeField] private int dawn = 6;
-        
-        public static UnityAction<int, int, int> OnDateTimeChanged;
 
-        private void Start()
+        public static UnityAction<int, int, int> OnDateTimeChanged;
+        public static UnityAction<bool> OnDaytime;
+
+        private void Awake()
         {
             OnDateTimeChanged?.Invoke(day, hour, minute);
+            OnDaytime?.Invoke(hour < dusk && hour >= dawn);
         }
 
         private void Update()
@@ -54,9 +56,18 @@ namespace _Scripts.Environment
                 day++;
             }
             OnDateTimeChanged?.Invoke(day, hour, minute);
-            
-            if(hour == dusk) UpdateSound(ForestAmbiance.Night);
-            if(hour == dawn) UpdateSound(ForestAmbiance.Day);
+
+            if (hour == dusk)
+            {
+                OnDaytime?.Invoke(false);
+                UpdateSound(ForestAmbiance.Night);
+            }
+
+            if (hour == dawn)
+            {
+                OnDaytime?.Invoke(true);
+                UpdateSound(ForestAmbiance.Day);
+            }
             
         }
 

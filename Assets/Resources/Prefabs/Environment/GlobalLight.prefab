@@ -54,7 +54,7 @@ MonoBehaviour:
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
-  m_ApplyToSortingLayers: 2532aaa800000000
+  m_ApplyToSortingLayers: 2532aaa8000000007b040f9471e24f01
   m_LightCookieSprite: {fileID: 0}
   m_DeprecatedPointLightCookieSprite: {fileID: 0}
   m_LightOrder: 0
@@ -149,15 +149,15 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 1
-      inSlope: -5.253754
-      outSlope: -5.253754
+      inSlope: -7.713302
+      outSlope: -7.713302
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.045265954
+      outWeight: 0.051302925
     - serializedVersion: 3
-      time: 0.49773234
-      value: -0.0037014186
+      time: 0.30187052
+      value: -0.008492678
       inSlope: -0.000000999782
       outSlope: -0.000000999782
       tangentMode: 0
@@ -167,11 +167,11 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 5.236269
-      outSlope: 5.236269
+      inSlope: 2.668222
+      outSlope: 2.668222
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.041406713
+      inWeight: 0.061558302
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

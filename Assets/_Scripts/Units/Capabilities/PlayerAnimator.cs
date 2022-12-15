@@ -21,7 +21,7 @@ namespace _Scripts.Units.Capabilities
         // move audio here
         public static PlayerAnimationState CurrentState { get; private set; }
         public static PlayerAnimator Instance;
-        public Animator _animator;
+        private Animator _animator;
         private static bool _animatorValid;
         private EventInstance _footstepsInstance;
         private EventInstance _jumpInstance;
@@ -42,7 +42,7 @@ namespace _Scripts.Units.Capabilities
             _footstepsInstance = SoundManager.Instance.CreateEventInstance(FMODEvents.Instance.Running);
             _jumpInstance = SoundManager.Instance.CreateEventInstance(FMODEvents.Instance.Jump);
             _deathInstance = SoundManager.Instance.CreateEventInstance(FMODEvents.Instance.Hit); // todo death
-            _hitInstance = SoundManager.Instance.CreateEventInstance(FMODEvents.Instance.Hit); // todo death
+            _hitInstance = SoundManager.Instance.CreateEventInstance(FMODEvents.Instance.Hit);
             _frozenInstance = SoundManager.Instance.CreateEventInstance(FMODEvents.Instance.FrozenBreath);
         }
 
@@ -55,11 +55,17 @@ namespace _Scripts.Units.Capabilities
 
             CurrentState = newState;
         }
+        public float GetAnimationLength()
+        {
+            return _animator.GetCurrentAnimatorStateInfo(0).length * _animator.GetCurrentAnimatorStateInfo(0).speed;
+        }
+        
         public bool IsAnimationFinished(PlayerAnimationState newState)
         {
             if (CurrentState == newState && _animatorValid)
             {
-                return Math.Abs(_animator.GetCurrentAnimatorStateInfo(0).normalizedTime - 1f) < 0.1f;
+                var time = _animator.GetCurrentAnimatorStateInfo(0).normalizedTime;
+                return Math.Abs(time - (long) time - 0.1f) < 0.01f;
             }
 
             return true;
@@ -91,9 +97,17 @@ namespace _Scripts.Units.Capabilities
             _hitInstance.start();
         }
 
-        public void FrozenBreathSound()
+        public void FrozenBreathSound(bool play)
         {
-            _frozenInstance.start();
+            if (!play)
+            {
+                _frozenInstance.stop(STOP_MODE.ALLOWFADEOUT);
+                return;
+            }
+
+            _frozenInstance.getPlaybackState(out var stat);
+            if(stat == PLAYBACK_STATE.STOPPED)
+                _frozenInstance.start();
         }
     }
     

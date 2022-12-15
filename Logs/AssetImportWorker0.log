@@ -1,0 +1,1524 @@
+Unity Editor version:    2021.3.11f1 (0a5ca18544bf)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.1 (Build 22C5033e)
+Darwin version:          22.2.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        8192 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58395
+Successfully changed project path to: /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow
+/Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 448.56 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 (high power)
+Metal devices available: 1
+0: Apple M1 (high power)
+Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56916
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.11f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.001791 seconds.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 123.22 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.535 seconds
+Domain Reload Profiling:
+	ReloadAssembly (535ms)
+		BeginReloadAssembly (91ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (377ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (77ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (247ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (123ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (93ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.013063 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 126.61 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0003f] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.520 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1522ms)
+		BeginReloadAssembly (82ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (1369ms)
+			LoadAssemblies (177ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (198ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (921ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (127ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (631ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.11f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.23 seconds
+Refreshing native plugins compatible for Editor in 1.19 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6508 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 129 unused Assets / (1.3 MB). Loaded Objects now: 6895.
+Memory consumption went from 218.9 MB to 217.6 MB.
+Total: 16.267709 ms (FindLiveObjects: 0.393125 ms CreateObjectMapping: 0.298708 ms MarkObjects: 14.962125 ms  DeleteObjects: 0.612917 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009068 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x2ab887000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.93 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00013] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.548 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1548ms)
+		BeginReloadAssembly (242ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (20ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (88ms)
+		EndReloadAssembly (1244ms)
+			LoadAssemblies (168ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (290ms)
+			ReleaseScriptCaches (10ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (556ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (89ms)
+				ProcessInitializeOnLoadAttributes (391ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.97 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6377 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 6911.
+Memory consumption went from 223.0 MB to 221.6 MB.
+Total: 15.815458 ms (FindLiveObjects: 0.513208 ms CreateObjectMapping: 0.147458 ms MarkObjects: 14.325875 ms  DeleteObjects: 0.828292 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 854439.500201 seconds.
+  path: Assets/Resources/Prefabs/Units/House.prefab
+  artifactKey: Guid(584a7dac6b44449a7945fca0b8d42ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Units/House.prefab using Guid(584a7dac6b44449a7945fca0b8d42ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cb653b07fa6ec21cae47f46f0fa91f2') in 0.500368 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 43.660331 seconds.
+  path: Assets/Resources/Prefabs/Units/House.prefab
+  artifactKey: Guid(584a7dac6b44449a7945fca0b8d42ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Units/House.prefab using Guid(584a7dac6b44449a7945fca0b8d42ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932a06179e0def85d31f3886d59912d1') in 0.058388 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.014511 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16f343000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.66 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00013] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.416 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1418ms)
+		BeginReloadAssembly (222ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (53ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (69ms)
+		EndReloadAssembly (1138ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (224ms)
+			ReleaseScriptCaches (6ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (550ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (411ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.64 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6384 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 104 unused Assets / (1.4 MB). Loaded Objects now: 6979.
+Memory consumption went from 317.4 MB to 316.0 MB.
+Total: 16.124500 ms (FindLiveObjects: 0.445666 ms CreateObjectMapping: 0.325209 ms MarkObjects: 14.757500 ms  DeleteObjects: 0.595667 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.023516 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16f2b7000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.54 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00013] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.423 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1424ms)
+		BeginReloadAssembly (188ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (82ms)
+		EndReloadAssembly (1176ms)
+			LoadAssemblies (137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (215ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (586ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (440ms)
+				ProcessInitializeOnLoadMethodAttributes (66ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.48 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6385 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 6995.
+Memory consumption went from 326.3 MB to 324.9 MB.
+Total: 19.884458 ms (FindLiveObjects: 0.481625 ms CreateObjectMapping: 0.166750 ms MarkObjects: 18.189625 ms  DeleteObjects: 1.045792 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007879 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16f2b7000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.97 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00013] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.350 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1351ms)
+		BeginReloadAssembly (195ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (1097ms)
+			LoadAssemblies (163ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (192ms)
+			ReleaseScriptCaches (10ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (508ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (374ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.60 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6385 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 7011.
+Memory consumption went from 335.1 MB to 333.8 MB.
+Total: 17.782125 ms (FindLiveObjects: 0.451291 ms CreateObjectMapping: 0.209584 ms MarkObjects: 16.425541 ms  DeleteObjects: 0.694291 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 281.200230 seconds.
+  path: Assets/Scenes/Game/Map0.unity
+  artifactKey: Guid(9f2cb2713a4754d738ccdcad7d9fe275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game/Map0.unity using Guid(9f2cb2713a4754d738ccdcad7d9fe275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce895cdee91f9137c2ec700e6d403b45') in 0.038025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 250.137863 seconds.
+  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Prefab/PF Village Props - Sword.prefab
+  artifactKey: Guid(b8fd7e9f16def9745b8b8b4c3928d52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Prefab/PF Village Props - Sword.prefab using Guid(b8fd7e9f16def9745b8b8b4c3928d52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42979cfca9d8c1c44f9949173e1fba83') in 0.227510 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 63.168703 seconds.
+  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Prefab/PF Village Props - Training Dummy.prefab
+  artifactKey: Guid(7fc30cd74f5aa724387df7546e0f3d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Prefab/PF Village Props - Training Dummy.prefab using Guid(7fc30cd74f5aa724387df7546e0f3d5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da413c66da207f561da659fffd19ef77') in 0.057657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.004050 seconds.
+  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Prefab/PF Village Props - Wheat B.prefab
+  artifactKey: Guid(c3b86686583e114479cc11b139a8a401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Prefab/PF Village Props - Wheat B.prefab using Guid(c3b86686583e114479cc11b139a8a401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d5436271d0e48f7b836af8b608f455') in 0.008878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.751047 seconds.
+  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Prefab/PF Village Props - Wheat C.prefab
+  artifactKey: Guid(924118ea6eca18f459f67d54f8640858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Prefab/PF Village Props - Wheat C.prefab using Guid(924118ea6eca18f459f67d54f8640858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d49f8d27d5ee42c6bc0cc5328579bdc') in 0.011040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.590007 seconds.
+  path: Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Prefab/PF Village Props - Wheat E.prefab
+  artifactKey: Guid(0cde5280cb0df5240bf5cc2866248e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Cainos/Pixel Art Platformer - Village Props/Prefab/PF Village Props - Wheat E.prefab using Guid(0cde5280cb0df5240bf5cc2866248e08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69c69b0620bfd52e5b3b332dc31897d2') in 0.010018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 174.493420 seconds.
+  path: Assets/Resources/Prefabs/Units/House.prefab
+  artifactKey: Guid(584a7dac6b44449a7945fca0b8d42ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Units/House.prefab using Guid(584a7dac6b44449a7945fca0b8d42ee5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49951e0b1d9d47758ff923afc234fc48') in 0.099589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 221.199729 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Tiles/Brush trees 3.prefab
+  artifactKey: Guid(e3759e37387f4d444ae406925d2add9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Tiles/Brush trees 3.prefab using Guid(e3759e37387f4d444ae406925d2add9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e411975125642a4a76bc3cf0264ffa') in 0.034567 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.327369 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_0.asset
+  artifactKey: Guid(6a37304281b7a93468ae375b8e634428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_0.asset using Guid(6a37304281b7a93468ae375b8e634428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f75ef2810b2b89cdc0ba97adbc210e') in 0.123410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.522086 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_1.asset
+  artifactKey: Guid(ebdb85d6d6fce354c8f4b4c2af4817cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_1.asset using Guid(ebdb85d6d6fce354c8f4b4c2af4817cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fae3351b34416f4a74a03cbe8ef966c0') in 0.034381 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.834444 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_2.asset
+  artifactKey: Guid(f0e0f663d96e6d645bedcdd61a9a9d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_2.asset using Guid(f0e0f663d96e6d645bedcdd61a9a9d2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef0e8aa56931aa7b0922ae4602e2653') in 0.010011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.665690 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_5.asset
+  artifactKey: Guid(eaf96641c67239e4aaf9388f3436f113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_5.asset using Guid(eaf96641c67239e4aaf9388f3436f113) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d11a3d0a87177d5de391ea8da54418d') in 0.007574 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.774478 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_8.asset
+  artifactKey: Guid(98b4ec2640b56b44db2bff9e3b190a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_8.asset using Guid(98b4ec2640b56b44db2bff9e3b190a59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '035ac6b62df5c2987156c29e5a751065') in 0.009175 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.669054 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_13.asset
+  artifactKey: Guid(6744da717d2a9574ba6c045454e30e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_13.asset using Guid(6744da717d2a9574ba6c045454e30e3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27305457a24c6a93b009993515fc590f') in 0.008674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.028039 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_14.asset
+  artifactKey: Guid(7a9e34fd73357ac429ddee6fc43a1e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush tree_14.asset using Guid(7a9e34fd73357ac429ddee6fc43a1e1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99dfaaf05206c47b5e5e5fb091b1a369') in 0.006651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.552659 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Tiles/Bush trees 3.prefab
+  artifactKey: Guid(9485dea805eafaa4f947f2a8aa62364f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Tiles/Bush trees 3.prefab using Guid(9485dea805eafaa4f947f2a8aa62364f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e9bd55c6180c58e2402ba9542f956d4') in 0.023656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.589226 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Tiles/Bush trees 2.prefab
+  artifactKey: Guid(4e9bcd1c5c1ac944baf053f45780f91b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Tiles/Bush trees 2.prefab using Guid(4e9bcd1c5c1ac944baf053f45780f91b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cccddc6acde5c0815bb4971b73e2b418') in 0.011409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.530764 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush trees.prefab
+  artifactKey: Guid(dae09111662e7a44d9e86bd1ca2b6e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Tiles/bush trees.prefab using Guid(dae09111662e7a44d9e86bd1ca2b6e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86509b864e831137a6801f2b26330a17') in 0.012318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.823998 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Tiles/Grass.prefab
+  artifactKey: Guid(beb99dfc1d8c8ba4fac89e3c3f028d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Tiles/Grass.prefab using Guid(beb99dfc1d8c8ba4fac89e3c3f028d62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25577356dc4fb3c9b18d0b5a805e2229') in 0.012687 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 95.862181 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Trees02.png
+  artifactKey: Guid(525b766b4dfd0cf41b7240d2aa2d577e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Trees02.png using Guid(525b766b4dfd0cf41b7240d2aa2d577e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecccd12f51be94acc857f658c604d403') in 0.592315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.380072 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Trees.png
+  artifactKey: Guid(7159b745c944bd04eaac8cd75637813f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Trees.png using Guid(7159b745c944bd04eaac8cd75637813f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a77149ac8fad9b03f3cb939ad0a4d4ee') in 0.129242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.421814 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/tileset.png
+  artifactKey: Guid(78c860fc764e3b54a9b4d3bc8cbed2c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/tileset.png using Guid(78c860fc764e3b54a9b4d3bc8cbed2c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54ff83eb84acadf8d37591796fce9add') in 0.114598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.361732 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/tree01.png
+  artifactKey: Guid(236496afec0132b4486dfd300050134e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/tree01.png using Guid(236496afec0132b4486dfd300050134e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '805640fd5acce540306e8b6009de966e') in 0.020559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.085430 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/tree02.png
+  artifactKey: Guid(f23aca6745aef7d45a7c873e8479f817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/tree02.png using Guid(f23aca6745aef7d45a7c873e8479f817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54724351cc80fbbd1add113ecdd1ddb5') in 0.021043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.588572 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/tree03.png
+  artifactKey: Guid(8ad84f4a91da8834f9df86c6db3b127c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/tree03.png using Guid(8ad84f4a91da8834f9df86c6db3b127c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57de457076479edf3a6a77a391b3ae43') in 0.017825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.208557 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/grass 1.png
+  artifactKey: Guid(8bced8577d39121409ecb3aa3246f66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/grass 1.png using Guid(8bced8577d39121409ecb3aa3246f66e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '379c3147ed58513086c2ca39250414c5') in 0.013812 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.518562 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/grass.png
+  artifactKey: Guid(7cee8d8ab7737ba4ea4c738079df89fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/grass.png using Guid(7cee8d8ab7737ba4ea4c738079df89fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0473cf799ec5e37830fb443146065f') in 0.031825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.541835 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PREVIEWS/Example02.png
+  artifactKey: Guid(ec925e47a395fb74893a435c85c92b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PREVIEWS/Example02.png using Guid(ec925e47a395fb74893a435c85c92b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9d8a515c5b5007b7fe7ddfd1a97927') in 0.035529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.593064 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PREVIEWS/Example01.png
+  artifactKey: Guid(b5a2ab3fbf1655f4aa10543178105c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PREVIEWS/Example01.png using Guid(b5a2ab3fbf1655f4aa10543178105c12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e80cd531305a7245c50560b1b8f76c5') in 0.037314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.515091 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PREVIEWS/Example03.png
+  artifactKey: Guid(701fe674c37cb004f8773d6f381dba33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PREVIEWS/Example03.png using Guid(701fe674c37cb004f8773d6f381dba33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0b1bfa3528725eef1d8aa45df7df1f2') in 0.035960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.726335 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PREVIEWS/Tileset Guide example.png
+  artifactKey: Guid(bce4e947ac890184bad9c4dc50ae284d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PREVIEWS/Tileset Guide example.png using Guid(bce4e947ac890184bad9c4dc50ae284d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdcea8ad9711e42934257947208d6ca8') in 0.020291 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 94.768651 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Trees.png
+  artifactKey: Guid(7159b745c944bd04eaac8cd75637813f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Trees.png using Guid(7159b745c944bd04eaac8cd75637813f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a643188dfe1488da4ec9d9cc89d7e207') in 0.172162 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 164.617906 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background.png
+  artifactKey: Guid(588d195b942f7d4479fb63804c5186e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background.png using Guid(588d195b942f7d4479fb63804c5186e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66b9f388ba420005aff4675b17fa156b') in 0.237562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background layer2b.png
+  artifactKey: Guid(71c92b0c4b3eaa04aa4eabd21dbed665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background layer2b.png using Guid(71c92b0c4b3eaa04aa4eabd21dbed665) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '177c486c97684756bca29d33fd892c57') in 0.056938 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background2.png
+  artifactKey: Guid(78f13c58d62916847ab789a3c15e1765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background2.png using Guid(78f13c58d62916847ab789a3c15e1765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ce699c2f9777aecfa79dd64b910c4da') in 0.085524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000064 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background layer1.png
+  artifactKey: Guid(4f71d1132eec0784b98e5d0ab5fb6896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background layer1.png using Guid(4f71d1132eec0784b98e5d0ab5fb6896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf1c82d31458965a23f9f70201d2a9f8') in 0.082649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background layer3b.png
+  artifactKey: Guid(0f1cc8e854b637147a2030217c720573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background layer3b.png using Guid(0f1cc8e854b637147a2030217c720573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5c1a628c6e69037041a1857b7cee407') in 0.056820 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background layer2.png
+  artifactKey: Guid(5edac6073aeae4c4199baa7ed2bf963d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background layer2.png using Guid(5edac6073aeae4c4199baa7ed2bf963d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ca5f59eb9768db075e471a763d1aeb') in 0.075508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background layer1b.png
+  artifactKey: Guid(919d2937f3f4d7e4dbac76aa1486b75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background layer1b.png using Guid(919d2937f3f4d7e4dbac76aa1486b75c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cea0df97e2a79bcf5aa9d37af75e084') in 0.053047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background layer3.png
+  artifactKey: Guid(e26bceeff014b5149a444258fc9cc14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Backgrounds/background layer3.png using Guid(e26bceeff014b5149a444258fc9cc14b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cafce3cf651df4d67cf27e5fc15bbfae') in 0.053400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.034193 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Build Your Tree 2.png
+  artifactKey: Guid(3c2faf73082a0604fba0ebb048e8c3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Build Your Tree 2.png using Guid(3c2faf73082a0604fba0ebb048e8c3f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa019e80edf97d5758652c2cb61e0140') in 0.069920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Build Your Tree.png
+  artifactKey: Guid(c7d38fb2c7fc07b428aa371a12fa8784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Build Your Tree.png using Guid(c7d38fb2c7fc07b428aa371a12fa8784) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '948b24cf628111a4bc1da7c656346322') in 0.085736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.425256 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/bush tree.png
+  artifactKey: Guid(d77f8fc68590d314d801e4f4640d6a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/bush tree.png using Guid(d77f8fc68590d314d801e4f4640d6a22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9398ee1daf8395067f94bba1f7bd3188') in 0.046401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.178905 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/tree01.png
+  artifactKey: Guid(236496afec0132b4486dfd300050134e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/tree01.png using Guid(236496afec0132b4486dfd300050134e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd0c3e3ca93b703e9a7ef62ba78183e6') in 0.020172 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.585333 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/tree02.png
+  artifactKey: Guid(f23aca6745aef7d45a7c873e8479f817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/tree02.png using Guid(f23aca6745aef7d45a7c873e8479f817) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b9b87682ef2b786e5fb3ac00482385') in 0.018601 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/Trees02.png
+  artifactKey: Guid(525b766b4dfd0cf41b7240d2aa2d577e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/Trees02.png using Guid(525b766b4dfd0cf41b7240d2aa2d577e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d5e4c30a54313c9147683522268f011') in 0.017863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 160.241909 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/PNG/tileset.png
+  artifactKey: Guid(78c860fc764e3b54a9b4d3bc8cbed2c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/PNG/tileset.png using Guid(78c860fc764e3b54a9b4d3bc8cbed2c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0a0ebb3f95a3a452bf4486e56b04f8b') in 0.123879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 112.439549 seconds.
+  path: Assets/Resources/Prefabs/Units/Wood/Tree.prefab
+  artifactKey: Guid(dd16edcee586046f88bc1c44216eb649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Units/Wood/Tree.prefab using Guid(dd16edcee586046f88bc1c44216eb649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1656b248ec91731bdac19b9d7242cb7f') in 0.077527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 64.756773 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/readme.txt
+  artifactKey: Guid(e2172dc9a9dfa9948a27e139df903466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/readme.txt using Guid(e2172dc9a9dfa9948a27e139df903466) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06c3359afc9104cefbd75142a8ded9b') in 1.332412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.368273 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Lisense.txt
+  artifactKey: Guid(fa5ecc21b19fb8d499b9a8f9a43ff6ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Lisense.txt using Guid(fa5ecc21b19fb8d499b9a8f9a43ff6ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce2cfb9ef68f298800c17382e82fdde8') in 0.002585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.978720 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/Contact.txt
+  artifactKey: Guid(68502a8a1219a5f4dbc58fb7548b82a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/Contact.txt using Guid(68502a8a1219a5f4dbc58fb7548b82a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4237ce89273ca1314f6ed087c0da2e30') in 0.001844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.194916 seconds.
+  path: Assets/Sprites/Pixel Art Snowy Forest/changelog unity.txt
+  artifactKey: Guid(0acb7e4d8d982ff458c5b0309b6080b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/Pixel Art Snowy Forest/changelog unity.txt using Guid(0acb7e4d8d982ff458c5b0309b6080b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf0005df038763a638586d3a84699f2') in 0.001996 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 26.04 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 102 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 104 unused Assets / (1.4 MB). Loaded Objects now: 7235.
+Memory consumption went from 442.1 MB to 440.8 MB.
+Total: 51.321250 ms (FindLiveObjects: 0.405750 ms CreateObjectMapping: 0.091000 ms MarkObjects: 50.049916 ms  DeleteObjects: 0.773958 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005615 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16f2b7000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.47 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00013] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.729 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1733ms)
+		BeginReloadAssembly (309ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (56ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (96ms)
+		EndReloadAssembly (1359ms)
+			LoadAssemblies (214ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (251ms)
+			ReleaseScriptCaches (27ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (596ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (83ms)
+				ProcessInitializeOnLoadAttributes (450ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 9.95 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6385 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 7226.
+Memory consumption went from 0.57 GB to 0.57 GB.
+Total: 14.715167 ms (FindLiveObjects: 0.327833 ms CreateObjectMapping: 0.147709 ms MarkObjects: 13.718208 ms  DeleteObjects: 0.520333 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006669 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16f2b7000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.64 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00013] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.472 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1472ms)
+		BeginReloadAssembly (272ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (19ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (113ms)
+		EndReloadAssembly (1134ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (216ms)
+			ReleaseScriptCaches (21ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (509ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (378ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.73 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6385 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 7242.
+Memory consumption went from 0.58 GB to 0.57 GB.
+Total: 31.462084 ms (FindLiveObjects: 0.795250 ms CreateObjectMapping: 0.399500 ms MarkObjects: 29.394416 ms  DeleteObjects: 0.870917 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007629 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16f2b7000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.58 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00013] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.364 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1365ms)
+		BeginReloadAssembly (168ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (20ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1125ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (207ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (540ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (393ms)
+				ProcessInitializeOnLoadMethodAttributes (56ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.52 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6385 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 7258.
+Memory consumption went from 0.58 GB to 0.58 GB.
+Total: 14.399292 ms (FindLiveObjects: 0.265833 ms CreateObjectMapping: 0.151375 ms MarkObjects: 13.048375 ms  DeleteObjects: 0.933042 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 42.09 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 103 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 7258.
+Memory consumption went from 465.8 MB to 464.4 MB.
+Total: 27.640000 ms (FindLiveObjects: 0.353916 ms CreateObjectMapping: 0.107375 ms MarkObjects: 26.331250 ms  DeleteObjects: 0.841875 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 597.941007 seconds.
+  path: Assets/Resources/Prefabs/Units/Player.prefab
+  artifactKey: Guid(61718509eb8ac459e9cd21c8ee40e365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Prefabs/Units/Player.prefab using Guid(61718509eb8ac459e9cd21c8ee40e365) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29fa8b65b6ff09e15ec1849f51015ece') in 0.771356 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.299938 seconds.
+  path: Assets/Scenes/Game/Map0.unity
+  artifactKey: Guid(9f2cb2713a4754d738ccdcad7d9fe275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game/Map0.unity using Guid(9f2cb2713a4754d738ccdcad7d9fe275) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f32056f8fdad51b56a6ea03f35f2adcf') in 0.001988 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006328 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16f2b7000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.15 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00013] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.442 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2445ms)
+		BeginReloadAssembly (309ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (26ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (75ms)
+		EndReloadAssembly (2057ms)
+			LoadAssemblies (284ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (295ms)
+			ReleaseScriptCaches (9ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (1225ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (93ms)
+				ProcessInitializeOnLoadAttributes (1059ms)
+				ProcessInitializeOnLoadMethodAttributes (62ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.62 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6383 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 114 unused Assets / (1.4 MB). Loaded Objects now: 7315.
+Memory consumption went from 0.59 GB to 0.59 GB.
+Total: 23.465709 ms (FindLiveObjects: 0.624667 ms CreateObjectMapping: 0.846708 ms MarkObjects: 21.266250 ms  DeleteObjects: 0.727625 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009577 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16f2b7000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.85 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00013] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.617 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1621ms)
+		BeginReloadAssembly (298ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (31ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (84ms)
+		EndReloadAssembly (1256ms)
+			LoadAssemblies (242ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (245ms)
+			ReleaseScriptCaches (13ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (504ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (379ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 9.74 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6384 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 7331.
+Memory consumption went from 0.60 GB to 0.60 GB.
+Total: 31.935417 ms (FindLiveObjects: 2.079083 ms CreateObjectMapping: 0.693333 ms MarkObjects: 28.449042 ms  DeleteObjects: 0.713375 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006233 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16f2b7000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.55 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00013] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.791 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1793ms)
+		BeginReloadAssembly (295ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (24ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (92ms)
+		EndReloadAssembly (1431ms)
+			LoadAssemblies (229ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (11ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (613ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (481ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.77 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6384 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 7347.
+Memory consumption went from 0.61 GB to 0.61 GB.
+Total: 14.519542 ms (FindLiveObjects: 0.406042 ms CreateObjectMapping: 0.152375 ms MarkObjects: 13.181667 ms  DeleteObjects: 0.778542 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 36.54 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 103 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 7347.
+Memory consumption went from 492.4 MB to 491.0 MB.
+Total: 45.252167 ms (FindLiveObjects: 0.419583 ms CreateObjectMapping: 0.092042 ms MarkObjects: 42.685375 ms  DeleteObjects: 2.051291 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.031255 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16f2b7000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 4.84 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00013] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.180 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2185ms)
+		BeginReloadAssembly (483ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (48ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (1ms)
+			CreateAndSetChildDomain (91ms)
+		EndReloadAssembly (1620ms)
+			LoadAssemblies (584ms)
+			RebuildTransferFunctionScriptingTraits (1ms)
+			SetupTypeCache (263ms)
+			ReleaseScriptCaches (21ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (566ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (5ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (425ms)
+				ProcessInitializeOnLoadMethodAttributes (49ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 9.00 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6384 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 7363.
+Memory consumption went from 0.62 GB to 0.62 GB.
+Total: 21.486375 ms (FindLiveObjects: 0.350792 ms CreateObjectMapping: 0.162666 ms MarkObjects: 19.634750 ms  DeleteObjects: 1.337500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009664 seconds.
+Begin MonoManager ReloadAssembly
+Thread 0x16f2b7000 may have been prematurely finalized
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.40 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00025] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/PackageVersionUtility.cs:22 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugin/BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x0057d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00012] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Plugins/PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00044] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x00037] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00013] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x0000d] in /Users/oaksapling/Desktop/Dev/gamedev/ProjectSnow/Library/PackageCache/com.unity.visualscripting@1.7.8/Editor/VisualScripting.Core/Utilities/VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace () (at /Users/bokken/buildslave/unity/build/Runtime/Export/Scripting/StackTrace.cs:37)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[]) (at /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs:130)
+
+(Filename: /Users/bokken/buildslave/unity/build/Editor/Mono/EditorAssemblies.cs Line: 130)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.723 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1725ms)
+		BeginReloadAssembly (268ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (22ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (72ms)
+		EndReloadAssembly (1399ms)
+			LoadAssemblies (265ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (261ms)
+			ReleaseScriptCaches (6ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (647ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (70ms)
+				ProcessInitializeOnLoadAttributes (517ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.29 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6384 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 7379.
+Memory consumption went from 0.63 GB to 0.62 GB.
+Total: 28.301334 ms (FindLiveObjects: 0.399084 ms CreateObjectMapping: 0.158417 ms MarkObjects: 25.623042 ms  DeleteObjects: 2.120125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 57.06 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 103 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 103 unused Assets / (1.4 MB). Loaded Objects now: 7379.
+Memory consumption went from 508.0 MB to 506.6 MB.
+Total: 37.548292 ms (FindLiveObjects: 0.419709 ms CreateObjectMapping: 0.101375 ms MarkObjects: 35.738125 ms  DeleteObjects: 1.286791 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

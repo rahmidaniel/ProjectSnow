@@ -49,6 +49,7 @@ namespace Scenes.Sctips.Capabilities
             {
                 _desiredJump = false;
                 CalculateJump();
+                _jumpStarted = true;
             }
 
             switch (_body.velocity.y)
@@ -60,9 +61,14 @@ namespace Scenes.Sctips.Capabilities
                 case < -0.01f:
                     _body.gravityScale = downwardMovementMultiplier;
                     if(!_ground.OnGround) PlayerAnimator.Instance.ChangeAnimation(PlayerAnimationState.Fall);
-                    break;
-                case > -0.1f and < 0f:
-                    if(!_ground.OnGround) PlayerAnimator.Instance.JumpSound(1);
+                    else 
+                    {
+                        if (_jumpStarted)
+                        {
+                            PlayerAnimator.Instance.JumpSound(1);
+                            _jumpStarted = false;
+                        }
+                    }
                     break;
                 case 0f:
                     _body.gravityScale = 1f;

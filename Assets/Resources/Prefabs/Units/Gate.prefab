@@ -125,3 +125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 0}
+  transitionTime: 1
+  nextLevel: 2
+  spawnPlayer: 1

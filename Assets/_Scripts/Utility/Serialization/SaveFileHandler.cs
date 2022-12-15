@@ -6,25 +6,25 @@ namespace _Scripts.Utility.Serialization
 {
     public class SaveFileHandler
     {
-        private readonly string _path;
-        private readonly string _filename;
+        private readonly string path;
+        private readonly string filename;
 
         public SaveFileHandler(string filename, string path)
         {
-            _filename = filename;
-            _path = path;
+            this.filename = filename;
+            this.path = path;
         }
 
         public GameData LoadData()
         {
             GameData gameData = null;
             
-            var location = Path.Combine(_path, _filename);
+            var location = Path.Combine(path, filename);
             try
             {
-                if (!Directory.Exists(Path.GetDirectoryName(_path)))
+                if (!Directory.Exists(Path.GetDirectoryName(path)))
                 {
-                    Directory.CreateDirectory(Path.GetDirectoryName(_path) ?? string.Empty);
+                    Directory.CreateDirectory(Path.GetDirectoryName(path) ?? string.Empty);
                 }
 
                 using var fileStream = new FileStream(location, FileMode.Open);
@@ -33,11 +33,6 @@ namespace _Scripts.Utility.Serialization
 
                 gameData = JsonUtility.FromJson<GameData>(data);
                 if (gameData.dead) return null; // Dead saves shouldn't pop up
-            }
-            catch (FileNotFoundException ignore)
-            {
-                Debug.Log("Save file doesn't exist");
-                return gameData;
             }
             catch (Exception e)
             {
@@ -50,7 +45,7 @@ namespace _Scripts.Utility.Serialization
 
         public void SaveData(GameData gameData)
         {
-            var location = Path.Combine(_path, _filename);
+            var location = Path.Combine(path, filename);
             try
             {
                 var data = JsonUtility.ToJson(gameData, true);

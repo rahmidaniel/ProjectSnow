@@ -10,12 +10,18 @@ namespace _Scripts.Utility
         [field: SerializeField] public EventReference LogPickup { get; private set; }
         [field: SerializeField] public EventReference Damage { get; private set; }
         
+        [field: Header("General SFX")]
+        [field: SerializeField] public EventReference Door { get; private set; }
+
         [field: Header("Player SFX")]
         [field: SerializeField] public EventReference Running { get; private set; }
         [field: SerializeField] public EventReference Jump { get; private set; }
         [field: SerializeField] public EventReference FrozenBreath { get; private set; }
         [field: SerializeField] public EventReference Hit { get; private set; }
         [field: SerializeField] public EventReference Death { get; private set; }
+        
+        [field: Header("Emitters")]
+        [field: SerializeField] public EventReference Fire { get; private set; }
         
         [field: Header("Ambiance")]
         [field: SerializeField] public EventReference Ambience { get; private set; }

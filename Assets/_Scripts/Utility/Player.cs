@@ -23,7 +23,7 @@ namespace _Scripts.Utility
         public List<LogController> pickUpObjects; // TODO
         public int logCount;
         private bool _dead;
-        
+
         private void Awake()
         {
             if (Instance != null)
@@ -49,24 +49,22 @@ namespace _Scripts.Utility
 
         private void OnTemperatureChange(float min, float current, float max)
         {
-            // TODO: Will trigger backwards
-            if(Math.Abs(current - (max - min) * 0.2f) < 0.01) PlayerAnimator.Instance.FrozenBreathSound();
-            
+            PlayerAnimator.Instance.FrozenBreathSound(current < (max - min) * 0.2f);
+
             if (Mathf.Abs(min - current) < 0.1f && !_dead)
             {
                 _dead = true;
                 PlayerAnimator.Instance.ChangeAnimation(PlayerAnimationState.Death);
-                //_movementController.blocked = true; // TODO messes up animation somehow
             }
-
         }
 
         private void Update()
         {
-            if(!_dead) return;
-            if(PlayerAnimator.Instance.IsAnimationFinished(PlayerAnimationState.Death)) 
+            if (!_dead) return;
+            if(PlayerAnimator.Instance.IsAnimationFinished(PlayerAnimationState.Death))
                 UIManager.UIStateChanged.Invoke(UIState.DeathMenu);
         }
+
 
         public void TeleportToLevel()
         {
@@ -91,20 +89,24 @@ namespace _Scripts.Utility
         
         public void SaveData(ref GameData data)
         {
+            if (this == null) return;
             data.dead = _dead;
             data.playerPosition = transform.position;
             data.logCount = logCount;
             data.sceneIndex = SceneManager.GetActiveScene().buildIndex;
+            data.axeUnlocked = GetComponent<Attack>().enabled;
         }
 
         public void LoadData(GameData data)
         {
             transform.position = data.playerPosition;
             logCount = data.logCount;
+            GetComponent<Attack>().enabled = data.axeUnlocked;
         }
 
         private void OnDestroy()
         {
+            SerializationManager.Instance.SaveGame();
             TemperatureController.OnTemperatureChange -= OnTemperatureChange;
         }
     }

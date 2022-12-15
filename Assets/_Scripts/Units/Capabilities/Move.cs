@@ -29,11 +29,6 @@ namespace _Scripts.Units.Capabilities
             _ground = GetComponent<Ground>();
         }
 
-        private void Start()
-        {
-           // _footstepsInstance = SoundManager.Instance.CreateEventInstance(FMODEvents.Instance.Running);
-        }
-
         private void Update()
         {
             _desiredVelocity = new Vector2(_horizontal * Mathf.Max(maxSpeed - _ground.Friction, 0f) * speedModifier, 0f);
@@ -43,7 +38,7 @@ namespace _Scripts.Units.Capabilities
         {
             var velocity = Vector2.zero;
 
-            if (!blocked)
+            if (!blocked && !Attack.Attacking)
             {
                 velocity = _body.velocity;
                 var acceleration = _ground.OnGround ? maxAcceleration : maxAirAcceleration;
@@ -57,9 +52,9 @@ namespace _Scripts.Units.Capabilities
 
         private void UpdateAnimation()
         {
-            if (_ground.OnGround && PlayerAnimator.Instance.IsAnimationFinished(PlayerAnimationState.Hit))
+            if (_ground.OnGround && !Attack.Attacking)
                 PlayerAnimator.Instance.ChangeAnimation(_body.velocity.x == 0f ? PlayerAnimationState.Idle : PlayerAnimationState.Run);
-            //UpdateSound(); // For cutscenes
+
             switch (_body.velocity.x)
             {
                 case < 0 when !_mFacingRight:

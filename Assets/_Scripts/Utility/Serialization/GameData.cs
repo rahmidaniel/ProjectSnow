@@ -10,12 +10,16 @@ namespace _Scripts.Utility.Serialization
         public bool dead;
         public int logCount;
         public bool doorOpen;
+        public bool axeUnlocked;
         public float fuel, maxFuel;
         public Vector3 playerPosition;
         public int sceneIndex;
         public List<Vector3> treePositions;
-        public Vector3 time;
-        public Vector3 temperature;
+        public Vector3 time, temperature;
+
+        public bool fullscreenOn;
+        public int graphicsQuality;
+        public float masterVolume;
 
         public GameData()
         {
@@ -24,6 +28,7 @@ namespace _Scripts.Utility.Serialization
             playerPosition = Vector3.zero;
             sceneIndex = 0;
             doorOpen = false;
+            axeUnlocked = false;
             fuel = maxFuel;
             treePositions = new List<Vector3>();
             time = Vector3.zero;

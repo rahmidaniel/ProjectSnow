@@ -1,12 +1,3 @@
-/Library/
-/Logs/
-/obj/Debug/
-/Packages/
-/ProjectSettings/
-/Temp/
-/UserSettings/
-/Assembly-CSharp.csproj
-
 # Never ignore DLLs in the FMOD subfolder.
 !/[Aa]ssets/Plugins/FMOD/**/lib/*
 
@@ -25,3 +16,20 @@
 # Log files can be ignored.
 fmod_editor.log
 mono_crash.0.0.json
+
+# Ignore misc OS files...
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+ 
+# Ignore Unity artifacts
+Library
+Temp
+*.csproj
+*.pidb
+*.sln
+*.userprefs

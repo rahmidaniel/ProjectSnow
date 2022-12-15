@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ace87537678048d9ab38bb7e81f79ad6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filename: save.bin
+  filename: save.json
   forceInit: 0

@@ -23,12 +23,12 @@ namespace _Scripts.Units.Utility
         {
             bar.interactable = false;
             _text = GetComponentInChildren<TextMeshProUGUI>();
-            TemperatureController.OnTemperatureChange += OnTemperatureChange;
+            TemperatureController.ChangeListener(OnTemperatureChange);
         }
         
         private void OnDestroy()
         {
-            TemperatureController.OnTemperatureChange -= OnTemperatureChange;
+            TemperatureController.ChangeListener(OnTemperatureChange, true);
         }
 
         private void OnTemperatureChange(float min, float current, float max)
@@ -45,10 +45,8 @@ namespace _Scripts.Units.Utility
 
         private void SetBarValue(float value)
         {
-            //bar.value = Mathf.SmoothDamp(bar.value, value, ref _currentVelocity, changeSpeed * Time.deltaTime);
             _currentValue = bar.value;
             _targetValue = value;
-            //bar.value = value;
             fill.color = gradient.Evaluate(bar.normalizedValue);
         }
 

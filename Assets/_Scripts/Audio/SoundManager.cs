@@ -47,22 +47,20 @@ namespace _Scripts.Utility
 
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            //_masterBus.stopAllEvents(STOP_MODE.ALLOWFADEOUT);
+            StopMusic();
+            StopAmbience();
             switch (scene.buildIndex)
             {
                 case 0:
-                    StopMusic();
+                    PlayMusic(FMODEvents.Instance.Menu);
+                    break;
+                case 1:
                     PlayAmbience();
                     SetAmbienceArea(AmbienceArea.Mountain);
                     break;
-                case 1:
-                    StopMusic();
+                case 2:
                     PlayAmbience();
                     SetAmbienceArea(AmbienceArea.Forest);
-                    break;
-                case 2:
-                    StopAmbience();
-                    PlayMusic(FMODEvents.Instance.Menu);
                     break;
             }
         }

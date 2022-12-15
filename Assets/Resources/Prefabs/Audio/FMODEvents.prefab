@@ -58,6 +58,13 @@ MonoBehaviour:
       Data3: 1620698044
       Data4: -1433057707
     Path: event:/SFX/Wood/Damage
+  <Door>k__BackingField:
+    Guid:
+      Data1: 194584723
+      Data2: 1301874972
+      Data3: -1274134143
+      Data4: -331392399
+    Path: event:/SFX/Door
   <Running>k__BackingField:
     Guid:
       Data1: 784532241
@@ -86,6 +93,20 @@ MonoBehaviour:
       Data3: -43623749
       Data4: -1705630409
     Path: event:/SFX/Player/Hit
+  <Death>k__BackingField:
+    Guid:
+      Data1: -1318248132
+      Data2: 1247250146
+      Data3: -43623749
+      Data4: -1705630409
+    Path: event:/SFX/Player/Hit
+  <Fire>k__BackingField:
+    Guid:
+      Data1: -1728014859
+      Data2: 1215954269
+      Data3: -732326738
+      Data4: 846391611
+    Path: event:/Ambiance/Fire
   <Ambience>k__BackingField:
     Guid:
       Data1: 730687672

@@ -1,10 +1,6 @@
-using System;
 using System.Collections.Generic;
-using System.IO;
-using Unity.VisualScripting;
 using UnityEngine;
 using System.Linq;
-using _Scripts.Units.Utility;
 using UnityEngine.SceneManagement;
 
 namespace _Scripts.Utility.Serialization
@@ -55,7 +51,7 @@ namespace _Scripts.Utility.Serialization
 
         private static List<IPersistentData> FindImplementations()
         {
-            var objects = FindObjectsOfType<MonoBehaviour>().OfType<IPersistentData>();
+            var objects = FindObjectsOfType<MonoBehaviour>(includeInactive: true).OfType<IPersistentData>();
             return new List<IPersistentData>(objects);
         }
 
@@ -106,7 +102,8 @@ namespace _Scripts.Utility.Serialization
 
         public bool HasData()
         {
-            return _gameData != null;
+            if (_gameData != null) return !_gameData.dead;
+            return false;
         }
 
         public int LastScene()

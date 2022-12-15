@@ -1,3 +1,4 @@
+using System;
 using _Scripts.Utility;
 using _Scripts.Utility.Serialization;
 using FMODUnity;
@@ -42,7 +43,13 @@ namespace _Scripts.Environment
         private void Start()
         {
             _body = GetComponent<SpriteRenderer>();
-            _emitter = GetComponent<StudioEventEmitter>();
+            _emitter = SoundManager.Instance.CreateStudioEventEmitter(FMODEvents.Instance.Fire, gameObject);
+            _emitter.Play();
+        }
+
+        private void OnDestroy()
+        {
+            _emitter.Stop();
         }
 
         private void Update()
@@ -99,6 +106,7 @@ namespace _Scripts.Environment
 
         public void LoadData(GameData data)
         {
+            if (data.maxFuel == 0) return;
             fuel = data.fuel;
             maxFuel = data.maxFuel;
         }

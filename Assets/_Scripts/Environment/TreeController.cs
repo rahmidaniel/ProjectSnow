@@ -10,6 +10,8 @@ namespace _Scripts.Environment
     {
         [SerializeField] private GameObject drop;
         [SerializeField] private int dropCount = 2;
+        [SerializeField] private int hitsNeeded = 2;
+        private int hits;
         private Vector3 _spread;
 
         public Rigidbody2D Rigidbody2D { get; private set; }
@@ -29,12 +31,11 @@ namespace _Scripts.Environment
         {
             return ($"Press '{CurrentBinding}' to cut tree.");
         }
-
-        protected override void Interact()
+        
+        public void Hit()
         {
-            PlayerAnimator.Instance.ChangeAnimation(PlayerAnimationState.Hit);
             _damageInstance.start();
-
+            if (hitsNeeded > ++hits) return;
             // get root point (y) of the tree
             var basePoint = transform.position.y - _spread.y / 2f; 
             
@@ -55,5 +56,7 @@ namespace _Scripts.Environment
 
             Destroy(gameObject);
         }
+        
+        protected override void Interact() {}
     }
 }

@@ -19,9 +19,11 @@ namespace _Scripts.Environment
         
         public static UnityAction<float, float, float> OnTemperatureChange;
 
-
-        private float _currentVelocity;
-        [SerializeField] private float delta;
+        public static void ChangeListener(UnityAction<float, float, float> function, bool delete = false)
+        {
+            if (!delete) OnTemperatureChange += function;
+            else OnTemperatureChange -= function;
+        }
 
         private void Start()
         {
@@ -51,7 +53,7 @@ namespace _Scripts.Environment
                     throw new ArgumentOutOfRangeException();
             }
             
-            OnTemperatureChange?.Invoke(min, current, max);
+            OnTemperatureChange.Invoke(min, current, max);
         }
 
         public void SaveData(ref GameData data)

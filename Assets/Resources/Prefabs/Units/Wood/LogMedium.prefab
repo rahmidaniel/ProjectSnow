@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -352009076071845771}
   - component: {fileID: 5267342092049001368}
   - component: {fileID: -4332921999434582767}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LogMedium
   m_TagString: Log
   m_Icon: {fileID: 0}
@@ -141,9 +141,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f33af1f371c410c8b2f4b1da4a570d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionPanel: {fileID: 0}
   drop: {fileID: 4204355056560993824, guid: b94d0ba46de044d938dc275a858ebb50, type: 3}
   dropCount: 2
-  pickUpAllowed: 0
-  grabAllowed: 1
-  hitAllowed: 1
