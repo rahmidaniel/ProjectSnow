@@ -1,4 +1,5 @@
 using System;
+using _Scripts.Units;
 using _Scripts.Utility;
 using _Scripts.Utility.Serialization;
 using UnityEngine;
@@ -8,22 +9,15 @@ namespace _Scripts.Environment
 {
     public class TemperatureController : MonoBehaviour, IPersistentData
     {
+        public static UnityAction<float, float, float> OnTemperatureChange;
         [SerializeField] private float min = -10;
         [SerializeField] private float current = 30;
         [SerializeField] private float max = 30;
         [SerializeField] private float cappedMax;
         [SerializeField] private float fallRate = 1f;
         [SerializeField] private float gainRate = 3.5f;
-        
-        [SerializeField] private float ttl = 120;
-        
-        public static UnityAction<float, float, float> OnTemperatureChange;
 
-        public static void ChangeListener(UnityAction<float, float, float> function, bool delete = false)
-        {
-            if (!delete) OnTemperatureChange += function;
-            else OnTemperatureChange -= function;
-        }
+        [SerializeField] private float ttl = 120;
 
         private void Start()
         {
@@ -33,24 +27,23 @@ namespace _Scripts.Environment
         private void Update()
         {
             cappedMax = max - (1 - Player.Instance.HouseInfo.Integrity) * (max - min);
-            var diff =  Time.deltaTime * ((max - min) / ttl);
+            var diff = Time.deltaTime * ((max - min) / ttl);
 
-            switch (Player.Instance.HouseInfo.State)
+            if (Player.Instance.HouseInfo.State == HouseState.Inside && Player.Instance.HouseInfo.Integrity > 0f)
             {
-                case HouseState.Inside:
-                    current += diff * gainRate;
-                    if (current > cappedMax) current = cappedMax;
-                    break;
-                case HouseState.InsideOpen:
-                    current += diff * (gainRate / 2);
-                    if (current > cappedMax) current = cappedMax;
-                    break;
-                case HouseState.Outside or HouseState.OutsideOpen:
-                    current -= diff * fallRate;
-                    if (current < min) current = min;
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
+                current += diff * gainRate;
+                if (current > max) current = max;
+            }
+            else if (Player.Instance.HouseInfo.State == HouseState.InsideOpen && Player.Instance.HouseInfo.Integrity > 0f)
+            {
+                current += diff * (gainRate / 2);
+                if (current > max) current = max;
+            }
+            else if (Player.Instance.HouseInfo.Integrity <= 0f ||
+                     Player.Instance.HouseInfo.State is HouseState.Outside or HouseState.OutsideOpen)
+            {
+                current -= diff * fallRate;
+                if (current < min) current = min;
             }
             
             OnTemperatureChange.Invoke(min, current, max);

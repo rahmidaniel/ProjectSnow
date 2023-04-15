@@ -6,8 +6,8 @@ namespace _Scripts.Utility.Serialization
 {
     public class SaveFileHandler
     {
-        private readonly string path;
         private readonly string filename;
+        private readonly string path;
 
         public SaveFileHandler(string filename, string path)
         {
@@ -18,14 +18,12 @@ namespace _Scripts.Utility.Serialization
         public GameData LoadData()
         {
             GameData gameData = null;
-            
+
             var location = Path.Combine(path, filename);
             try
             {
                 if (!Directory.Exists(Path.GetDirectoryName(path)))
-                {
                     Directory.CreateDirectory(Path.GetDirectoryName(path) ?? string.Empty);
-                }
 
                 using var fileStream = new FileStream(location, FileMode.Open);
                 using var streamReader = new StreamReader(fileStream);
@@ -38,7 +36,7 @@ namespace _Scripts.Utility.Serialization
             {
                 Debug.LogError("Error occurred when trying to save.\n" + e);
             }
-            
+
 
             return gameData;
         }
@@ -49,7 +47,7 @@ namespace _Scripts.Utility.Serialization
             try
             {
                 var data = JsonUtility.ToJson(gameData, true);
-                
+
                 using var fileStream = new FileStream(location, FileMode.Create);
                 using var streamWriter = new StreamWriter(fileStream);
                 streamWriter.Write(data);

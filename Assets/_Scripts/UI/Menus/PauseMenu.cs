@@ -1,10 +1,6 @@
-using System;
-using _Scripts.Environment;
 using _Scripts.UI;
 using _Scripts.Utility;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Assertions.Must;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
@@ -38,7 +34,7 @@ namespace _Scripts.Units.Utility
 
         public void Escape(InputAction.CallbackContext context)
         {
-            if(!IsPaused) Pause();
+            if (!IsPaused) Pause();
             else Resume();
         }
 
@@ -58,7 +54,7 @@ namespace _Scripts.Units.Utility
             Time.timeScale = 0f;
             IsPaused = true;
         }
-        
+
         public void Exit()
         {
             Application.Quit();

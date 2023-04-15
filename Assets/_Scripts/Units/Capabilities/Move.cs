@@ -1,5 +1,3 @@
-using _Scripts.Utility;
-using FMOD.Studio;
 using Scenes.Sctips.Checks;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -14,12 +12,12 @@ namespace _Scripts.Units.Capabilities
         [SerializeField] private float maxAirAcceleration = 18f;
         public float speedModifier = 1f; // For snow slow effect
         public bool blocked;
+        private Rigidbody2D _body;
 
         private Vector2 _desiredVelocity;
         private Ground _ground;
-        
+
         private float _horizontal;
-        private Rigidbody2D _body;
 
         private bool _mFacingRight;
 
@@ -31,7 +29,8 @@ namespace _Scripts.Units.Capabilities
 
         private void Update()
         {
-            _desiredVelocity = new Vector2(_horizontal * Mathf.Max(maxSpeed - _ground.Friction, 0f) * speedModifier, 0f);
+            _desiredVelocity =
+                new Vector2(_horizontal * Mathf.Max(maxSpeed - _ground.Friction, 0f) * speedModifier, 0f);
         }
 
         private void FixedUpdate()
@@ -43,7 +42,7 @@ namespace _Scripts.Units.Capabilities
                 velocity = _body.velocity;
                 var acceleration = _ground.OnGround ? maxAcceleration : maxAirAcceleration;
                 var maxSpeedChange = acceleration * Time.deltaTime;
-                velocity.x = Mathf.MoveTowards(velocity.x, _desiredVelocity.x, maxSpeedChange);    
+                velocity.x = Mathf.MoveTowards(velocity.x, _desiredVelocity.x, maxSpeedChange);
             }
 
             _body.velocity = velocity;
@@ -53,7 +52,9 @@ namespace _Scripts.Units.Capabilities
         private void UpdateAnimation()
         {
             if (_ground.OnGround && !Attack.Attacking)
-                PlayerAnimator.Instance.ChangeAnimation(_body.velocity.x == 0f ? PlayerAnimationState.Idle : PlayerAnimationState.Run);
+                PlayerAnimator.Instance.ChangeAnimation(_body.velocity.x == 0f
+                    ? PlayerAnimationState.Idle
+                    : PlayerAnimationState.Run);
 
             switch (_body.velocity.x)
             {

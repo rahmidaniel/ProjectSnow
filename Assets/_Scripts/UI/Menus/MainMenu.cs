@@ -1,5 +1,3 @@
-using System;
-using _Scripts.Utility;
 using _Scripts.Utility.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,12 +7,13 @@ namespace _Scripts.Units.Utility
 {
     public class MainMenu : MonoBehaviour
     {
-        [SerializeField] private Button newGameButton; 
+        [SerializeField] private Button newGameButton;
         [SerializeField] private Button continueButton;
         private bool _canContinue;
 
         private void Start()
         {
+            SerializationManager.Instance.LoadGame();
             SetFirstSelected();
         }
 

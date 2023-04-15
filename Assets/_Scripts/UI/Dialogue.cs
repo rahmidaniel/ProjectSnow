@@ -1,6 +1,4 @@
-using System;
 using _Scripts.Utility;
-using TMPro;
 using UnityEngine;
 
 namespace _Scripts.Units.Utility
@@ -14,6 +12,8 @@ namespace _Scripts.Units.Utility
             return message;
         }
 
-        protected override void Interact() {}
+        protected override void Interact()
+        {
+        }
     }
 }

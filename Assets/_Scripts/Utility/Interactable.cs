@@ -1,7 +1,4 @@
-using System;
-using _Scripts.Environment;
-using TMPro;
-using Unity.VisualScripting;
+using _Scripts.Units;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -13,13 +10,13 @@ namespace _Scripts.Utility
         public static UnityAction<string> ShowMessage;
         public static UnityAction HideMessage;
 
-        private InputAction _interactAction;
-        // Pretty print for UI elements
-        protected string CurrentBinding => _interactAction.GetBindingDisplayString(group: Player.Instance.GetCurrentControlScheme());
         private bool _enter;
-        
-        protected abstract string UpdateMessage();
-        protected abstract void Interact();
+
+        private InputAction _interactAction;
+
+        // Pretty print for UI elements
+        protected string CurrentBinding =>
+            _interactAction.GetBindingDisplayString(group: Player.Instance.GetCurrentControlScheme());
 
         private void OnEnable()
         {
@@ -27,11 +24,6 @@ namespace _Scripts.Utility
             _interactAction = c.Player.Fire;
             _interactAction.Enable();
             _interactAction.performed += OnFire;
-        }
-
-        public void OnFire(InputAction.CallbackContext context)
-        {
-            if(_enter) Interact();
         }
 
         private void OnDisable()
@@ -48,17 +40,7 @@ namespace _Scripts.Utility
                 ShowMessage?.Invoke(UpdateMessage());
             }
         }
-        
-        protected void OnTriggerStay2D(Collider2D other)
-        {
-            if (other.CompareTag("Player"))
-            {
-                _enter = true;
-                // Send message to UI
-                ShowMessage?.Invoke(UpdateMessage());
-            }
-        }
-        
+
         protected void OnTriggerExit2D(Collider2D other)
         {
             if (other.CompareTag("Player"))
@@ -69,5 +51,22 @@ namespace _Scripts.Utility
             }
         }
 
+        protected void OnTriggerStay2D(Collider2D other)
+        {
+            if (other.CompareTag("Player"))
+            {
+                _enter = true;
+                // Send message to UI
+                ShowMessage?.Invoke(UpdateMessage());
+            }
+        }
+
+        protected abstract string UpdateMessage();
+        protected abstract void Interact();
+
+        public void OnFire(InputAction.CallbackContext context)
+        {
+            if (_enter) Interact();
+        }
     }
 }

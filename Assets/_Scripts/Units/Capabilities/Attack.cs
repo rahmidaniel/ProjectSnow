@@ -1,7 +1,5 @@
-using System;
 using _Scripts.Environment;
 using Scenes.Sctips.Checks;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -29,11 +27,8 @@ namespace _Scripts.Units.Capabilities
             Invoke(nameof(FinishAttack), PlayerAnimator.Instance.GetAnimationLength());
 
             var hit = Physics2D.OverlapCircle(attackPoint.position, radius, layerMask);
-            if(hit == null) return;
-            if (hit.transform.gameObject.TryGetComponent(out TreeController tree))
-            {
-                tree.Hit();
-            }
+            if (hit == null) return;
+            if (hit.transform.gameObject.TryGetComponent(out TreeController tree)) tree.Hit();
         }
 
         private void FinishAttack()

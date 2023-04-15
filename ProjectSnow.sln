@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityEditor", "FMODUnit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMODUnityResonanceEditor", "FMODUnityResonanceEditor.csproj", "{8c34ff20-734c-de7a-5c07-29e27b7a7517}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{906a90f3-e2f0-7005-e1d5-e7838b75bcc0}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{c7d888ff-f3c6-8f24-c3f1-9197f60dde4a}"
 EndProject
 Global
@@ -28,6 +30,8 @@ Global
 		{4ae9c874-4ff4-7983-35d3-d60c89b6da98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8c34ff20-734c-de7a-5c07-29e27b7a7517}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8c34ff20-734c-de7a-5c07-29e27b7a7517}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{906a90f3-e2f0-7005-e1d5-e7838b75bcc0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{906a90f3-e2f0-7005-e1d5-e7838b75bcc0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{c7d888ff-f3c6-8f24-c3f1-9197f60dde4a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{c7d888ff-f3c6-8f24-c3f1-9197f60dde4a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection

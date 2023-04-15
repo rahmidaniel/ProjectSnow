@@ -5,12 +5,12 @@ namespace _Scripts.Utility
         public HouseState State;
         public float Integrity; // 0f - 1f based on fuel levels
     }
-    
+
     public enum HouseState
     {
-        Inside, InsideOpen,
-        Outside, OutsideOpen
+        Inside,
+        InsideOpen,
+        Outside,
+        OutsideOpen
     }
-    
-    
 }

@@ -1,6 +1,3 @@
-using UnityEngine;
-using UnityEngine.Events;
-
 namespace _Scripts.Utility
 {
     public enum AmbienceArea
@@ -9,21 +6,23 @@ namespace _Scripts.Utility
         Forest = 1,
         Fire = 2
     }
+
     public enum ForestAmbiance
     {
         Day = 0,
         Night = 1
     }
+
     public enum MountainAmbiance
     {
         Cave = 0,
         Wind = 1
     }
+
     public enum FireAmbiance
     {
         Medium = 1,
         High = 0,
         Low = 2
     }
-
 }

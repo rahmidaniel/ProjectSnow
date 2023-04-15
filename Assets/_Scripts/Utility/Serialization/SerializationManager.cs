@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using UnityEngine;
 using System.Linq;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace _Scripts.Utility.Serialization
@@ -9,13 +9,12 @@ namespace _Scripts.Utility.Serialization
     {
         //[SerializeField] private string directory = "saves";
         [SerializeField] private string filename;
-        [Header("Debug")]
-        [SerializeField] private bool forceInit;
+        [Header("Debug")] [SerializeField] private bool forceInit;
+        private GameData _gameData;
+        private List<IPersistentData> _persistentDataObjects;
         private SaveFileHandler _saveFileHandler;
         public static SerializationManager Instance { get; private set; }
         public bool IsNewSave { get; private set; }
-        private GameData _gameData;
-        private List<IPersistentData> _persistentDataObjects;
 
         private void Awake()
         {
@@ -25,9 +24,10 @@ namespace _Scripts.Utility.Serialization
                 Destroy(gameObject);
                 return;
             }
+
             Instance = this;
             _saveFileHandler = new SaveFileHandler(filename, Application.persistentDataPath);
-            
+
             DontDestroyOnLoad(gameObject);
         }
 
@@ -41,17 +41,22 @@ namespace _Scripts.Utility.Serialization
             SceneManager.sceneLoaded -= OnSceneLoaded;
         }
 
-        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        private void OnApplicationQuit()
         {
             SaveGame();
+        }
+
+        private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+        {
+            if(_gameData != null) _gameData.sceneIndex = scene.buildIndex;
             _persistentDataObjects = FindImplementations();
-            LoadGame();
+            //if(!IsNewSave) LoadGame();
         }
 
 
         private static List<IPersistentData> FindImplementations()
         {
-            var objects = FindObjectsOfType<MonoBehaviour>(includeInactive: true).OfType<IPersistentData>();
+            var objects = FindObjectsOfType<MonoBehaviour>(true).OfType<IPersistentData>();
             return new List<IPersistentData>(objects);
         }
 
@@ -60,30 +65,31 @@ namespace _Scripts.Utility.Serialization
             _gameData = new GameData();
             IsNewSave = true;
         }
+
         public void LoadGame()
         {
-            if(forceInit){
+            if (forceInit)
+            {
                 Debug.Log("Forcing new game.");
                 NewGame(); // For debugging
                 return;
             }
-            
+
             // load from file
             _gameData = _saveFileHandler.LoadData();
-            
+
             if (_gameData == null)
             {
                 Debug.Log("No data found, aborting load.");
                 return;
             }
+
             // pass data to other scripts
-            foreach (var item in _persistentDataObjects)
-            {
-                item.LoadData(_gameData);
-            }
+            foreach (var item in _persistentDataObjects) item.LoadData(_gameData);
 
             IsNewSave = false;
         }
+
         public void SaveGame()
         {
             if (_gameData == null)
@@ -91,11 +97,9 @@ namespace _Scripts.Utility.Serialization
                 Debug.Log("No data found, aborting save.");
                 return;
             }
+
             // pass data to others scripts so they can update it
-            foreach (var item in _persistentDataObjects)
-            {
-                item.SaveData(ref _gameData);
-            }
+            foreach (var item in _persistentDataObjects) item.SaveData(ref _gameData);
 
             _saveFileHandler.SaveData(_gameData);
         }
@@ -109,11 +113,6 @@ namespace _Scripts.Utility.Serialization
         public int LastScene()
         {
             return _gameData.sceneIndex;
-        }
-
-        private void OnApplicationQuit()
-        {
-            SaveGame();
         }
     }
 }

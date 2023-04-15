@@ -1,20 +1,26 @@
-using System;
 using _Scripts.Utility;
 using TMPro;
 using UnityEngine;
 
-namespace _Scripts.Units.Utility
+namespace _Scripts.UI
 {
     public class InteractListener : MonoBehaviour
     {
         [SerializeField] private GameObject actionPanel;
-        private TextMeshProUGUI _text;
         private bool _hasText;
+        private TextMeshProUGUI _text;
+
         private void Start()
         {
             _text = actionPanel.GetComponentInChildren<TextMeshProUGUI>();
             Interactable.ShowMessage += ShowMessage;
             Interactable.HideMessage += HideMessage;
+        }
+
+        private void OnDestroy()
+        {
+            Interactable.ShowMessage -= ShowMessage;
+            Interactable.HideMessage -= HideMessage;
         }
 
         private void HideMessage()
@@ -25,13 +31,7 @@ namespace _Scripts.Units.Utility
         private void ShowMessage(string text)
         {
             actionPanel.SetActive(true);
-            if(_text != null) _text.text = text;
-        }
-
-        private void OnDestroy()
-        {
-            Interactable.ShowMessage -= ShowMessage;
-            Interactable.HideMessage -= HideMessage;
+            if (_text != null) _text.text = text;
         }
     }
 }

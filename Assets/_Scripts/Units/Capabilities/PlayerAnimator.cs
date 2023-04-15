@@ -1,7 +1,6 @@
 using System;
 using _Scripts.Utility;
 using FMOD.Studio;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace _Scripts.Units.Capabilities
@@ -15,19 +14,22 @@ namespace _Scripts.Units.Capabilities
         Fall,
         Death
     }
+
     [RequireComponent(typeof(Animator))]
     public class PlayerAnimator : MonoBehaviour
     {
+        public static PlayerAnimator Instance;
+        private static bool _animatorValid;
+        private Animator _animator;
+        private EventInstance _deathInstance;
+        private EventInstance _footstepsInstance;
+        private EventInstance _frozenInstance;
+        private EventInstance _hitInstance;
+
+        private EventInstance _jumpInstance;
+
         // move audio here
         public static PlayerAnimationState CurrentState { get; private set; }
-        public static PlayerAnimator Instance;
-        private Animator _animator;
-        private static bool _animatorValid;
-        private EventInstance _footstepsInstance;
-        private EventInstance _jumpInstance;
-        private EventInstance _deathInstance;
-        private EventInstance _hitInstance;
-        private EventInstance _frozenInstance;
 
         private void Awake()
         {
@@ -46,20 +48,24 @@ namespace _Scripts.Units.Capabilities
             _frozenInstance = SoundManager.Instance.CreateEventInstance(FMODEvents.Instance.FrozenBreath);
         }
 
-        private static string GetName(PlayerAnimationState value) => Enum.GetName(typeof(PlayerAnimationState), value);
+        private static string GetName(PlayerAnimationState value)
+        {
+            return Enum.GetName(typeof(PlayerAnimationState), value);
+        }
 
         public void ChangeAnimation(PlayerAnimationState newState)
         {
-            if(CurrentState == newState && _animatorValid) return;
+            if (CurrentState == newState && _animatorValid) return;
             _animator.Play(GetName(newState));
 
             CurrentState = newState;
         }
+
         public float GetAnimationLength()
         {
             return _animator.GetCurrentAnimatorStateInfo(0).length * _animator.GetCurrentAnimatorStateInfo(0).speed;
         }
-        
+
         public bool IsAnimationFinished(PlayerAnimationState newState)
         {
             if (CurrentState == newState && _animatorValid)
@@ -74,10 +80,7 @@ namespace _Scripts.Units.Capabilities
         public void StepSound()
         {
             _footstepsInstance.getPlaybackState(out var playbackState);
-            if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
-            {
-                _footstepsInstance.start();
-            }
+            if (playbackState.Equals(PLAYBACK_STATE.STOPPED)) _footstepsInstance.start();
         }
 
         public void JumpSound(float jump)
@@ -86,12 +89,12 @@ namespace _Scripts.Units.Capabilities
             _jumpInstance.setParameterByName("jump", jump);
             _jumpInstance.start();
         }
-        
+
         public void DeathSound()
         {
             _deathInstance.start();
         }
-        
+
         public void HitSound()
         {
             _hitInstance.start();
@@ -106,10 +109,8 @@ namespace _Scripts.Units.Capabilities
             }
 
             _frozenInstance.getPlaybackState(out var stat);
-            if(stat == PLAYBACK_STATE.STOPPED)
+            if (stat == PLAYBACK_STATE.STOPPED)
                 _frozenInstance.start();
         }
     }
-    
-    
 }

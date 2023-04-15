@@ -2,7 +2,6 @@ using _Scripts.Utility;
 using _Scripts.Utility.Serialization;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.UI;
 
 namespace _Scripts.UI.Menus
@@ -15,18 +14,12 @@ namespace _Scripts.UI.Menus
         private void Start()
         {
             slider.onValueChanged.AddListener(OnValueChanged);
-            if(SoundManager.Instance != null) slider.normalizedValue = SoundManager.Instance.masterVolume;
+            if (SoundManager.Instance != null) slider.normalizedValue = SoundManager.Instance.masterVolume;
         }
 
         private void OnDestroy()
         {
             slider.onValueChanged.RemoveListener(OnValueChanged);
-        }
-
-        private void OnValueChanged(float volume)
-        {
-            valueText.text = (slider.normalizedValue * 100f).ToString("0") + "%";
-            SoundManager.Instance.masterVolume = slider.normalizedValue;
         }
 
         public void SaveData(ref GameData data)
@@ -37,6 +30,12 @@ namespace _Scripts.UI.Menus
         public void LoadData(GameData data)
         {
             SoundManager.Instance.masterVolume = data.masterVolume;
+        }
+
+        private void OnValueChanged(float volume)
+        {
+            valueText.text = (slider.normalizedValue * 100f).ToString("0") + "%";
+            SoundManager.Instance.masterVolume = slider.normalizedValue;
         }
     }
 }

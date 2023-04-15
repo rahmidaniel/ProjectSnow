@@ -1,9 +1,8 @@
-using System;
+using _Scripts.Units;
 using _Scripts.Utility;
 using _Scripts.Utility.Serialization;
 using FMODUnity;
 using UnityEngine;
-using UnityEngine.Rendering.Universal;
 
 namespace _Scripts.Environment
 {
@@ -17,11 +16,15 @@ namespace _Scripts.Environment
         [SerializeField] private float gainLog = 25f;
 
         [SerializeField] private float ttl = 90f;
+        [Header("Visuals")] [SerializeField] private GameObject effects;
 
         private Collider2D _collider2D;
-        private SpriteRenderer _body;
-
         private StudioEventEmitter _emitter;
+
+        private FireAmbiance _fireAmbience;
+        private float _integrity;
+
+        private bool _working;
 
         private FireAmbiance FireAmbience
         {
@@ -33,29 +36,19 @@ namespace _Scripts.Environment
                 _fireAmbience = value;
             }
         }
-        private FireAmbiance _fireAmbience;
-
-        protected override string UpdateMessage()
-        {
-            return "Press 'F' to feed the flames. (" + (int) fuel + "/" + (int) maxFuel + ")";
-        }
 
         private void Start()
         {
-            _body = GetComponent<SpriteRenderer>();
             _emitter = SoundManager.Instance.CreateStudioEventEmitter(FMODEvents.Instance.Fire, gameObject);
+            _working = true;
             _emitter.Play();
-        }
-
-        private void OnDestroy()
-        {
-            _emitter.Stop();
         }
 
         private void Update()
         {
             if (fuel > 0)
             {
+                _working = true;
                 var diff = Time.deltaTime * maxFuel / ttl;
 
                 switch (Player.Instance.HouseInfo.State)
@@ -68,36 +61,36 @@ namespace _Scripts.Environment
                         break;
                 }
             }
-        
-            Player.Instance.HouseInfo.Integrity = fuel / maxFuel;
+
+            _integrity = fuel / maxFuel;
+            switch (_working)
+            {
+                case true when fuel <= 0f:
+                    EffectSwitch(false);
+                    _working = false;
+                    break;
+                case false when fuel > 0f:
+                    EffectSwitch(true);
+                    _working = true;
+                    break;
+            }
+
+            Player.Instance.HouseInfo.Integrity = _integrity;
             UpdateSound();
         }
-
-        private void UpdateSound()
+        
+        private void EffectSwitch(bool turnOn)
         {
-            // 33%
-            var value = Player.Instance.HouseInfo.Integrity;
-            if (FireAmbiance.High != FireAmbience && value > 0.7f)
-            {
-                FireAmbience = FireAmbiance.High;
-            }
-            if (FireAmbiance.Medium != FireAmbience && value is < 0.7f and >= 0.3f)
-            {
-               FireAmbience = FireAmbiance.Medium;
-            }
-            if (FireAmbiance.Low != FireAmbience && value < 0.3f)
-            {
-                FireAmbience = FireAmbiance.Low;
-            }
+            if (turnOn && !_emitter.IsPlaying()) _emitter.Play();
+            else _emitter.Stop();
+            effects.SetActive(turnOn);
         }
 
-        protected override void Interact()
+        private void OnDestroy()
         {
-            if (Player.Instance.logCount == 0) return;
-
-            Player.Instance.logCount--;
-            fuel += gainLog;
+            _emitter.Stop();
         }
+
         public void SaveData(ref GameData data)
         {
             data.fuel = fuel;
@@ -109,6 +102,30 @@ namespace _Scripts.Environment
             if (data.maxFuel == 0) return;
             fuel = data.fuel;
             maxFuel = data.maxFuel;
+        }
+
+        protected override string UpdateMessage()
+        {
+            return "Press 'F' to feed the flames. (" + (int) fuel + "/" + (int) maxFuel + ")";
+        }
+
+        private void UpdateSound()
+        {
+            // 33%
+            if (FireAmbiance.High != FireAmbience && _integrity > 0.7f) FireAmbience = FireAmbiance.High;
+
+            if (FireAmbiance.Medium != FireAmbience && _integrity is < 0.7f and >= 0.3f)
+                FireAmbience = FireAmbiance.Medium;
+
+            if (FireAmbiance.Low != FireAmbience && _integrity < 0.3f) FireAmbience = FireAmbiance.Low;
+        }
+
+        protected override void Interact()
+        {
+            if (Player.Instance.logCount == 0) return;
+
+            Player.Instance.logCount--;
+            fuel += gainLog;
         }
     }
 }

@@ -1,8 +1,5 @@
+using _Scripts.Units;
 using _Scripts.Utility;
-using _Scripts.Utility.Serialization;
-using FMODUnity;
-using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace _Scripts.Environment
 {

@@ -1,9 +1,5 @@
-using System;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
-using System.Linq;
-using _Scripts.Units.Utility;
 
 namespace _Scripts.UI
 {
@@ -13,13 +9,13 @@ namespace _Scripts.UI
         PauseMenu,
         DeathMenu
     }
+
     public class UIManager : MonoBehaviour
     {
+        public static UnityAction<UIState> UIStateChanged;
         [SerializeField] private GameObject HUD;
         [SerializeField] private GameObject pauseMenu;
         [SerializeField] private GameObject deathMenu;
-        
-        public static UnityAction<UIState> UIStateChanged;
 
         private void OnEnable()
         {
@@ -27,16 +23,16 @@ namespace _Scripts.UI
             UIStateChanged.Invoke(UIState.HUD);
         }
 
+        private void OnDisable()
+        {
+            UIStateChanged -= OnUIStateChanged;
+        }
+
         private void OnUIStateChanged(UIState newState)
         {
             HUD.SetActive(newState == UIState.HUD);
             pauseMenu.SetActive(newState == UIState.PauseMenu);
             deathMenu.SetActive(newState == UIState.DeathMenu);
-        }
-
-        private void OnDisable()
-        {
-            UIStateChanged -= OnUIStateChanged;
         }
     }
 }

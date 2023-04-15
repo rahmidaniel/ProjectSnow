@@ -1,10 +1,10 @@
+using System;
 using System.Collections.Generic;
-using _Scripts.Environment;
 using UnityEngine;
 
 namespace _Scripts.Utility.Serialization
 {
-    [System.Serializable]
+    [Serializable]
     public class GameData
     {
         public bool dead;
@@ -17,9 +17,9 @@ namespace _Scripts.Utility.Serialization
         public List<Vector3> treePositions;
         public Vector3 time, temperature;
 
-        public bool fullscreenOn;
+        public bool fullscreenOn = true;
         public int graphicsQuality;
-        public float masterVolume;
+        public float masterVolume ;
 
         public GameData()
         {

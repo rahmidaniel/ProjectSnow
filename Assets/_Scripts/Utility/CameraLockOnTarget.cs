@@ -1,8 +1,6 @@
-using System;
-using _Scripts.Environment;
+using _Scripts.Units;
 using Cinemachine;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace _Scripts.Utility
 {
